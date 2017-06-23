@@ -1,0 +1,205 @@
+---
+
+title: Performing an operation on a message received from a publish/subscribe service
+abstract: A client subscribes to a pub/sub service, the client comprises an application program for performing an operation on a published message received from a Pub/Sub service. The operation on the message comprises any one of saving the message to storage, accessing a web service based on information in the received message, authorizing subscription, executing an application identified by the message, filtering the message information for presentation to a user, overriding a message function, transforming the message media format or forwarding the message to another node.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=07720914&OS=07720914&RS=07720914
+owner: International Business Machines Corporation
+number: 07720914
+owner_city: Armonk
+owner_country: US
+publication_date: 20050805
+---
+This is a divisional application of Ser. No. 10 207 711 INTERACTIVE FILTERING ELECTRONIC MESSAGES RECEIVED FROM A PUBLICATION SUBSCRIPTION SERVICE filed on Jul. 26 2002 and assigned to IBM. The disclosure of the forgoing application is incorporated herein by reference.
+
+A portion of the disclosure of this patent document contains material which is subject to copyright protection. The copyright owner has no objection to the facsimile reproduction by anyone of the Patent and Trademark Office patent file or records but otherwise reserves all copyright rights whatsoever.
+
+The present invention is related to systems and methods for Publication Subscription more particularly to systems and methods for distributed computer users to securely subscribe and publish by way of a Pub Sub channel.
+
+In an example Internet system is shown. A user at client uses applications on his system. This user user at client can interact with clients by way of a client server computer . Applications may be provided by each client and or the client server or some remote server by way of the network . The user at client can interact with a remote user user at client by way of the Internet .
+
+Recently peer to peer P2P interconnection has become an interesting alternative. shows an example P2P network wherein peer can communicate with other peers directly. Each peer essentially includes client and server function. Thus Peer acts as a client in sending messages to Peer . Peer performs some function as a result of receiving the message and may return a message to peer . Thus peer acts as a server for peer . P2P grids provide networked computers that cooperate to perform distributed computing.
+
+Networked clients comprise applications for communication. E mail applications provide for sending a message to a mail server that then makes the recipient aware of the waiting message. The recipient then can elect to open the message and view it at his client machine. E mail messages can be sent to a single recipient or can contain a list of several recipients one to many . One to many e mail transactions are popular with advertisers and the use of one to many e mails has been dubbed SPAM ing . Recently Instant Messaging IM has gained popularity in the form of sending text messages directly to another client. A first user composes an IM and selects a second user as the target. A message is then sent directly to the second user and appears on his display as either a message or the notification of a message. IMs are typical one to one messages.
+
+Refer now to which depicts a logical view of a pub sub system of the prior art. A pub sub service receives messages originating from a content service and delivers them to client subscribers . An example message published includes a topic string a set of property name value pairs and a body. A subscriber identifies a topic string pattern and properties test and receives matching messages according to a standard for instance JAVA Message Service JMS .
+
+The pub sub system is made up of a Content Provider application Service the Subscriber Client and the Pub Sub Service . Applications may implement one or more of these roles. The content provider generates content for distribution through the pub sub system . Content providers send structured content to one or more instances of the pub sub service . The subscriber sends subscription requests to an instance of the pub sub service and subject to acceptance of a particular subscription request receives content from the pub sub service. The actual content received will be determined by the subscription and the message selection process.
+
+The pub sub service acts as both a subscription manager and a content distribution agent . Applications implementing the pub sub service role accept subscription requests from subscribers and subject to any applicable authentication or access control policies accept or reject subscription requests and distribute content to valid subscribers .
+
+The actual content sent to each subscriber by the pub sub service will be determined by the subscription process and through the message selection process .
+
+Applications implementing some aspect of the pub sub system may act in different roles in different circumstances. For example an application implementing the pub sub service role may itself act as a subscriber subscribing to and receiving content from another instance of the pub sub service. Similarly an application acting in the subscriber role may act as a content producer if the end user of the application wishes to publish a message to the service.
+
+The pub sub system provides for communication among applications implementing the application roles. There are two primary communications in the pub sub system messages are sent from content providers to pub sub services and pub sub services send messages to subscribers .
+
+Content providers may generate messages from any content source and subscribers may dispose of messages in any manner they choose. For example a content provider may simply be a gateway between a raw content source such as e mail or web pages to the pub sub service. Similarly a subscriber may act as a gateway between the pub sub service and an external service such as NNTP or e mail. An application implementing a particular role defined in the Pub Sub System may implement different roles at different times.
+
+For example an application implementing the pub sub service role may itself act as a subscriber subscribing to content through another instance of the pub sub service and receiving messages from that service.
+
+The present invention Shotgun teaches a system for publishing electronic information by way of channels. A user subscribes to a channel of information similarly to selecting a Television Channel. Messages of information broadcast from that channel are then directed to the subscriber application which comprises filtering mechanisms to selectively permit messages to be passed on to the shotgun client user. The system maintains a database directory of applications accessed through an administrative SOAP service. The directory contains security information channel access controls owner identification help text and the like.
+
+Publish subscribe systems contain information producers and information consumers. Information producers publish events to the system and information consumers subscribe to particular categories of events within the system. The system ensures the timely delivery of published events to all interested subscribers. In addition to supporting many to many communication the primary requirement met by publish subscribe systems is that producers and consumers of messages are anonymous to each other so that the number of publishers and subscribers may dynamically change and individual publishers and subscribers may evolve without disrupting the entire system.
+
+The earliest publish subscribe systems were subject based. In these systems each message belongs to one of a fixed set of subjects also known as groups channels or topics . Publishers are required to label each message with a subject consumers subscribe to all the messages within a particular subject. For example a subject based publish subscribe system for stock trading may define a group for each stock issue publishers may post information to the appropriate group and subscribers may subscribe to information regarding any issue.
+
+In an embodiment secure publication and subscription is provided in a system having a pub sub server having one or more channels the method comprising the steps of Providing first subscription access capability to a group channel the first subscription access requiring user authorization Providing second subscription access capability to a public channel wherein the second subscription access is universally authorized.
+
+In another embodiment a method is provided for invoking a first client application in a system wherein the system includes a pub sub server and a second client application the method comprising the steps of Subscribing to a channel of a pub sub server Receiving a message for invoking the first client application at the second client application from the pub sub server and Invoking the first client application using information supplied by the message.
+
+In another embodiment a method is provided for dynamic management of pub sub user applications by a user the method comprising the steps of Creating a list of pub sub user applications available to a user Using the list of user applications to create a GUI interface to a user the GUI interface comprising at least one of a first user application identifier an activate first user application function a deactivate first user application function a first user application active indicator or a method for displaying information about the first user application.
+
+In one version the optional step of subscribing to the first user application uses the GUI interface.
+
+Another version comprises the step of performing an authorization action in conjunction with the list in order to permit a user application to appear on the GUI interface to the user.
+
+In still another version the subscribing step further comprises the step of permitting subscribing to the first user application only when the user is authorized.
+
+It is therefore an object of the present invention to subscribe to messages published by a pub sub service wherein a received message is provided to a client application for performing an operation on the received message.
+
+It is another object of the invention to perform an operation on a message received from a pub sub service the operation consisting of any one of filtering the message information for presentation to a user saving the message to storage accessing a web service based on information in the received message authorizing the subscription executing an application identified by the message overriding a message function transforming the message media format or forwarding the message to another node.
+
+It is another object of the invention to operate on messages wherein the message is any one of an instant message a digital file an automated agent or an email message.
+
+It is yet another object of the invention to perform a Boolean operation on text fields of a pub sub message received and initiate the operation based on the results of the Boolean operation.
+
+It is still another object of the invention to transform a message media format of a received pub sub message from any one of encrypted decrypted compressed decompressed text audio video or image to a form consisting of any one of encrypted decrypted compressed decompressed text audio video or image.
+
+It is another object of the invention to receive a pub sub message comprising a subscriber authorizing agent for authorizing a subscription to receive messages from the pub sub service.
+
+It is another object of the invention to receive pub sub messages comprising a program application module for execution at the client computer.
+
+It is another object of the invention to forwarded received messages from a pub sub service to another node consisting of any one of a computer a telephone a radio or a television.
+
+The above as well as additional objectives features and advantages of the present invention will become apparent in the following written description.
+
+The present invention provides a method for publishing electronic messages by way of channels in a pub sub server system wherein subscription to applications and channels is provided by way of a secure GUI application. The example system employing the present invention is herein called Shotgun .
+
+In a preferred embodiment Shotgun comprises a Shotgun server application and a Shotgun client application. The Shotgun server application comprises 
+
+In a preferred embodiment a channel is a topic field appended to a message. The topic may have sub topic fields associated with it as well. When a subscriber subscribes to a channel of a service the pub sub service publishes messages having the selected topic field to the subscriber. Shotgun further provides a filter mechanism to permit the user to define the sub topics that he is interested in. Shotgun will only publish to the subscriber messages having topics and sub topics according to the subscriber s selection.
+
+Shotgun provides a mechanism for allowing a subscriber to subscribe to a service and to a channel provided by the service. Shotgun also provides a mechanism to allow a user to create filters on channels and message content message identifying information published by the pub sub service such that only selected channel messages those messages containing identifying information in accordance with predetermined inspection criteria are received by the user. Thus a user can create a channel filter to receive only stock quote messages and a message filter to only receive messages that include IBM stock.
+
+Services A C are available by subscription. Clients and comprise Applications and respectively . A user at Client subscribes by way of Pub Sub server to Service B . The user performs the Subscription operation using a GUI interface described later herein. Service B sends messages to subscribers by way of Pub Sub Server . Messages are filtered by examining the content of the message body for keywords boolean compares or other methods well known in the art. The filtering criteria is pre programed by the user of client such that only messages containing information of interest to the user appear at the user s display. Shotgun Application controls the filtering criteria but the actual filtering may be done at the pub sub server in one embodiment or on the client s machine App in another embodiment. Content filtering is performed on the incoming messages based on key words or more complex boolean tests depending on the implementation. In one embodiment the user is alerted when a message is available has passed the filter test and can elect to receive the full message or discard it.
+
+Subscription to a service persists as long as the shotgun client application is active or can be maintained based on other criteria such as elapsed time or specific user actions on off selection for example . In a preferred embodiment the user optionally enables the Shotgun client application to save subscriber information locally and use it to automatically subscribe to predetermined services with predetermined filtering whenever the client is activated power on .
+
+In a preferred embodiment shotgun client applications include an application program interface API providing an interface so that adjunct applications can be provided to the shotgun client applications . This provides similar functionality to application plug ins used to extend Web Browser functionality in a Web environment. In a preferred embodiment an instant messaging IM application is provided during a session such that clients can communicate with one another using IM facilities.
+
+In another preferred embodiment the shotgun client application provides a user API enabling a third party application to be plugged into the shotgun client application.
+
+In another preferred embodiment reference Client subscribes to Service A by way of the pub sub server . Service A provides an active agent IM A which interfaces to the system acting like a user. IM A has an IM address which it supplies to it s subscribers and subscribers can communicate with Service A using IM facilities.
+
+Using the embodiment above a shotgun client can receive information from Service A and communicate with other users or Service A as if Service A were another user client by way of IM.
+
+Shotgun automates the security mechanism for controlling who can publish data and on what channels. Shotgun maintains a database directory of applications accessed through an administrative SOAP service. SOAP is a lightweight XML based protocol for exchange of information in a decentralized distributed environment. It includes an envelope that defines a framework for describing what is in a message and how to process it and transport binding framework for exchanging messages using an underlying protocol. The directory of applications contains channel access controls owner identification help text and other application parameters.
+
+The shotgun infrastructure revolves around a publish and subscribe pub sub service. In a preferred embodiment it is an IBM WEBSPHERE service called MQ Publish Subscribe . Any pub sub application could be used to create a Shotgun service as taught by the present application. The WEBSPHERE service adds Enterprise level of security on top of a common broadcast component. The LDAP Lightweight Directory Access Protocol directory provides authentication and a grouping technology provides authorization. The application registration provides an additional level of authorization on top of the free form Corporate architecture.
+
+LDAP is a well known directory service protocol that runs over TCP IP. LDAP provides a method for a client to authenticate or prove its identity to a directory server to help protect the information the server contains.
+
+Security authentication Authorization for the publisher is provided by a private LDAP Directory an application registration database or any appropriate authorization technique. The publisher preferably uses a Web Service SOAP interface and calls the pub sub service by providing topic channel message user ID and password over HTTPS secure socket. Alternatively the publisher calls the pub sub service by providing topic channel and message over HTTPS wherein the user name and password are stored in the HTTP specified REMOTE USER field.
+
+Gryphon functionality is available in IBM WEBSPHERE available from INTERNATIONAL BUSINESS MACHINES particularly in the component IBM WEBSPHERE MQEVENT BROKER also available from INTERNATIONAL BUSINESS MACHINES Gryphon provides a new alternative to subject based systems is content based messaging systems. Functionality associated with Gryphon can be found in the following U.S. patents U.S. Pat. No. 6 216 132 METHOD AND SYSTEM FOR MATCHING CONSUMERS TO EVENTS Chandra et al. U.S. Pat. No. 6 091 724 ROUTING MESSAGES WITHIN A NETWORK USING THE DATA CONTENT OF THE MESSAGE Chandra et al. U.S. Pat. No. 6 336 119 METHOD AND SYSTEM FOR APPLYING CLUSTER BASED GROUP MULTICAST TO CONTENT BASED PUBLISH SUBSCRIBE SYSTEM Banavar et al. . Each of these patents is assigned to INTERNATIONAL BUSINESS MACHINES and incorporated herein by reference.
+
+A significant restriction with subject based publish subscribe is that the selectivity of subscriptions is limited to the predefined subjects. Content based systems support a number of information spaces where subscribers may express a query against the content of messages published.
+
+The Gryphon system provides content based publish subscribe functionality. Clients access the system through an implementation of the Java Message Service JMS API. The Gryphon message broker is scalable available and secure 
+
+Gryphon is a distributed computing paradigm for message brokering which is the transferring of information in the form of streams of events from information providers to information consumers.
+
+In Gryphon the flow of streams of events is described via an information flow graph. The information flow graph specifies the selective delivery of events the transformation of events and the generation of derived events as a function of states computed from event histories.
+
+Message brokering is motivated by the need for efficient delivery of information across a large number of users and applications in an environment characterized by heterogeneity of computing platforms anonymity between information producers and consumers and dynamic change due to system evolution. Within a single business such as a stock exchange or a weather forecasting agency there is a dynamically varying number of sub applications supplying events and a varying number consuming events. The suppliers and consumers may not necessarily be aware of one another instead the suppliers may simply be supplying information of a certain type to any interested consumer and each consumer may be interested in subsets of this information having particular properties. For example in a stock exchange one consumer may be interested in all stock trades greater than 1000 shares and another in specific market trends such as all stock trades representing a drop of more than 10 points from the previous day s high.
+
+There is also a growing need to glue together applications within multiple businesses to support inter business network commerce or maybe as a result of mergers and acquisitions. For example a retailer may need to connect to its suppliers and customers or a customer to various retailers and financial organizations. This may require transforming events from different sources into a compatible form merging them and selecting from these events.
+
+Message brokering is an extension of publish subscribe technology. The Gryphon approach augments the publish subscribe paradigm with the following features 
+
+Gryphon technology includes a collection of efficient implementations to support this paradigm and still provide scalability high throughput and low latency.
+
+As mentioned earlier event processing in Gryphon is described via an information flow graph. An information flow graph is a directed acyclic graph constituting an abstraction of the flow of events in the system. In one example stock trades from two information sources NYSE and NASDAQ are combined transformed filtered and delivered to a client. The two sources produce events of type price volume which are merged into a single stream. A path computes a new stream of events of type and another path filters out events with capital less than 1 000 000.
+
+A Gryphon information flow graph is an abstraction because Gryphon is free to physically implement the flow any way it chooses possibly radically altering the flow pattern provided that the consumers see the appropriate streams of events consistent with the incoming events and the transformations specified by the graph. Gryphon optimizes graphs and deploys them over a network of brokers or servers . The broker network is responsible for handling client connections and for distributing events.
+
+The nodes of the graph are called information spaces. Spaces are either 1. event histories monotonically growing collections of events e.g. stock trade events of the form price volume or 2. event interpretations states representing interpretations of sequences of events such as a table latestprice highestprice . Each information space has a schema defining the structure of the history or state it contains. Each arc path in the information flow graph defines an operation to derive the information space at the head from that at the tail. Arcs can be one of the following types 
+
+The Gryphon system consists of several components for efficiently realizing the information flow graph over a large distributed network of brokers. Areas of interest include 
+
+Referring now to Shotgun is an end to end Publish Subscribe e Utility. It includes three major components the IBM GRYPHON pub sub broker a Web Service publisher and a generic IBM SASH subscriber application Shotgun client subscriber application . Working together these services provide a complete easy to use solution for applications requiring message broadcast capability.
+
+The GRYPHON message brokering system merges Pub Sub communications and database functionality using information flow graph concepts. The information flow graph specifies the selective delivery of events the transformation of events and the generation of new events from providers to information consumers. In the prior art pub sub paradigm events in a distributed environment are classified through a set of subjects also known as topics channels or groups . GRYPHON extends this paradigm to allow the selection of events by content and or subject rather than simply subject and to allow event transformations. GRYPHON provides a general structure for message transformation. Events may change format drop fields or gain new fields.
+
+The SASH application also available from International Business Machines is a dynamically configurable programming environment for rapidly building and deploying platform integrated desktop applications using JavaScript and DHTML. This programming environment enables Web programming beyond the browser and the resulting applications are integrated seamlessly into the common desktop environment and take advantage of the latest standards in Web services.
+
+The pub sub model allows applications to publish data on channels similar to television or radio broadcasting and clients can tune in to listen for data even listen on many channels at one time.
+
+Shotgun supports multiple applications all publishing using the same infrastructure with each application broadcasting data on one or more channels. For example Application A might be analogous to a TV cable company broadcasting to your home several channels of programs and you might even be watching a ball game and keeping an eye on the weather channel at the same time e.g. using PIP . Application B might be similar to a radio station broadcasting on both AM and FM channels to your home. And Application C might be analogous to an emergency support vehicle driving through your neighborhood announcing evacuation procedures using a load speaker in this case a single channel broadcast of information which you may choose to subscribe to by opening your window.
+
+The Shotgun GRYPHON Web Service provides two major advantages to application developers. First it provides a convenient SOAP interface to publish messages via the GRYPHON pub sub server without the need for incorporating its lower level API while supporting the most common broadcast requirements. Secondly it automates the security mechanism for controlling who can publish data on channels. This is accomplished by integrating Password authorization.
+
+Shotgun maintains a DB2 database directory of applications accessed through an administrative SOAP service which can be used for controlled self registration of user written applications . The directory contains channel access controls owner identification help text and other application parameters used by the Shotgun client.
+
+The Shotgun client is a Sash web application weblication that is downloaded from the Web. The Shotgun client serves as a common interface to the GRYPHON server for all pub sub enabled weblications running on the client machine. A user can download his choice of shotgun enabled weblications from the Web and using a settings control option from the Shotgun client GUI can easily select applications and channels define message filters and control new message alerts.
+
+ QuickPoll and SkillTap are implemented as Sash weblications and must be downloaded separately from the Web Sash Weblication Factory . TradIt is a Java Websphere application which requires no shotgun client download. Test is available for users to send test messages to simulate application publishing and to test alert handling for channel and text filters. As mentioned earlier some applications support multiple channels and others require no channel selection. In the example QuickPoll allows user selection of listening channels.
+
+In pressing the edit button for the quickpoll application in the Channels column brings up a window at the shotgun client terminal. If the application provides a public broadcast channel meaning anyone can subscribe its name is displayed first openmic in this case . Anyone with a valid ID is allowed to publish on this channel. To listen for messages on the public channel the user selects the check box . Next if enabled by the application is the personal channel which matches the user s personal network ID. Only the user can publish on this channel but others can elect to listen. A check in the Personal box enables the user to receive any data he publishes.
+
+In the preferred embodiment a user has the option to add as many other personal channels i.e. your manager s Intranet ID or group channels . Groups are defined using a program called BlueGroups. The Shotgun GRYPHON Web Service will authenticate the publisher s network ID to ensure that it is a member of the group and that the channel name on which the data is published matches the group name. In the example only members of group webahead defined as a set of department numbers via an LDAP search filter are allowed to publish on the webahead channel .
+
+Referring now to in addition to channel selection a user may set message filters for any application using the edit button on the settings menu . The message filter allows the user to test for certain words phrases or combinations using simple AND and OR expressions or even complex programming style expressions that evaluate to true or false to determine whether he will be presented with an alert box displaying the incoming message. This allows the user to filter out unwanted messages.
+
+When an alert option in the settings menu is checked for an application messages that contain the information defined by the channel and filter settings will cause a notification window to display rather than displaying the filtered message immediately. shows an example alert message for the tradeit application identified in the alert window that includes the filter criteria ethernet switch in the alert message . The alert display includes an action UI button function that allows the user to decide whether or not he wants to continue in the application in which case he hits the yes button.
+
+The application Tradeit in this case is shown in the alert window of along with a blast message with words highlighted in red that match the filter rule that was fired. The user then has the option to ignore the event or select yes to trigger a backfire URL that was set by the application. In this example Selecting yes will cause an Internet browser window to launch for an HTTP URL in the case of a web application such as Tradeit . In another embodiment another Sash weblication may be launched by the backfire URL such as QuickPoll or SkillTap . In this case the Tradeit backfire URL calls a servlet that displays details about the item posted for trade by the responder. Note that if the alert option is unchecked in the selection table but the application is enabled via on off and an incoming message passes the channel and filter rules the backfire URL will be launched immediately.
+
+Table 1 shows example message fields for a preferred embodiment. Table 2 shows an example request for publish message and a corresponding publish message.
+
+The user subscribes to Service A preferably by a single action of selecting a subscribe button on his Shotgun setup GUI. Once the user has successfully subscribed to the service the pub sub engine includes the user in it s broadcast of messages from the service . The Shotgun client uses the predefined functions to support interaction of messages with the user s GUI .
+
+In a preferred embodiment messages are displayed at the user s terminal or forwarded to a custom application via an API . The custom application can be one that is supplied in messages from the channel plug in or separately supplied electronically or by other media familiar to one skilled in the art. These applications support transforming messages to control mechanical machinery display video or play audio mpeg transform from Text to Voice or Voice to text send electronic mail invoke a URL using the client s browser or any other transformation familiar to one skilled in the art. In one embodiment the local application optionally sends an alert signal to the user announcing invocation of the client application or message the user elects to perform the function of the application by taking an action or to abort it.
+
+In one embodiment the local client application may invoke an active application plug in that is a content service for a pub sub engine. The active application receives messages from a content provider by way of a pub sub channel. The active application transmits a second message may include the message received to a pub sub service for publication to subscribers. Thus the user may become a one to many re publisher of published content received from a pub sub engine.
+
+In the World Wide Web the Web program applications providing services are called Web Services . These are programs located on remote servers that may be used by a programmer to perform part of the application he is providing. For example a programmer may create a Web Page awebpage.com that displays regional weather. The programmer can create his web page using HTML and supporting images jpg gif for example . For regional weather the programmer takes advantage of web services to perform the needed function he calls a weather web service program in his awebpage.com HTML. The call provides parameters such as local post office zip code to the weather web service over the network. The web service returns the requested information to the client to be displayed by the browser as part of the awebpage.com page.
+
+Web services are useful in reducing the amount of code a programmer must write and maintain. He only needs to provide the interface for the service in his program.
+
+Recently a standard XML based interface has been defined WSDL that allows programmers to easily interface with web services.
+
+In the present invention refer to secure pub sub publishing utilizes a web service to perform the pub sub service. Thus shotgun performs various functions including authentication and calls the pub sub service GRYPHON to perform the actual one to many publication.
+
+Shotgun running in a client server environment accesses needed services over the web. The function is similar to a function call. When the Shotgun application has authenticated a content service Shotgun calls the PUB SUB service a web service accessed by Shotgun over the Web to perform the publication function for content provided by the content service that is published to the list of users who are subscribers to the content service by way of the Internet .
+
+This service is an enabling service. It provides a common interface to publish Shotgun messages over pub sub infrastructure. Since it is provided by a web service if the Shotgun protocol changes the web service need not change. Changes would occur at the web service level. Code that calls the web service would stay the same. If GRYPHON were abandoned and a different utility to provide pub sub were needed a programmer would substitute the new pub sub service in place and publishing could continue to occur as is without modification to client code.
+
+When the user logs into Shotgun he is using his Corporate ID and Password. Verification authorization is performed by a Security web service on behalf of the user. This allows the programmer to change the back end LDAP server to a DB2 database for example without disrupting the user. The web service interface stays the same.
+
+GroupCheck service ensures that users subscribing to pub sub channels are authorized members of that channel. Instead of distributing this code with every client the GroupCheck code is provided via the common interface as a web service. This service interfaces with the corporate LDAP servers to verify group membership. If the back end system needed to change it could without modification to the client code.
+
+ Upon Startup an Authenticated Web Service Provides a Custom Application Listing Based on User ID Group Membership 
+
+A custom application listing service is accessed via the web service interface. The actual data is stored in a DB2 database. Based on the users ID and membership a customized subset of the available applications is marked up in XML and returned as the result to the call to the web service. If the programmer wanted to he could decide to store the data in LDAP rather than the DB2 database and would effectively be switching web services. The listing change would not require any change to client code.
+
+As group membership grows users will need to continue to know what channels groups they are a part of. This web service constructs a query that returns a list of all the groups of which a user is a member. The user might be added to a group and not be told of it. With this service the group would be revealed to the user and the provided a UI could be integrated into any application needing Group browsing.
+
+ Provides a Generic Way to Generate Transaction Logging With Without Bill Able Unit Type Information 
+
+The ARS is used behind the scenes to provide logging . For example it logs when a user signed on what channels he signed up for and when he signed off. This provides clients the ability to log to a central database without needing the dependent DB2 libraries or DB2 code. Instead they interface with the web service which means that if DB2 is no longer the DB of choice mySQL could be dropped in and every client stays the same. Any changes would be done at the web service.
+
+In a preferred embodiment a Plugin module is supported by the Shotgun invention. The module comprises programs that perform additional function. The module is selectively attached to the Shotgun client by way of an application program interface API and receives messages directed to the user.
+
+An example use of the Plugin method of the present invention is displayed in . The user GUI that allows him to elect the channel and filter options he is interested in also permits him to Set Plugin . When he elects this option a screen is displayed. The user is prompted for Plugin information and he enters into the text window the function program he wants to perform on the incoming messages.
+
+In one embodiment the plugins are predefined functions that can be selected via a GUI prompt. In the present example the user is allowed to identify the file location of the code he wants to enable Forward and the parameters he wants the program to use. In the present example the Forward Plugin module that the user enters into the GUI prompt is shown in Table 3 
+
+To forward Shotgun alerts to a mailbox a SKYTEL pager or to a cell phone using SMS messaging a user would copy this code as his Shotgun plugin select Set plugin under the File menu option replacing the EMAIL tag in the code with his own messaging ID.
+
+The example above will forward all Shotgun w3alert application messages TOPIC shotgun w3alert as SMS alerts to SprintPCS phone number 9995551212. If a user only wants to forward w3alert messages sent to a particular BlueGroup channel he would replace the wildcard with the group name. The LOG on pathname option turns logging on so that messages forwarded via the plugin will be logged to the specified file with the return status from the mail forwarding web service. If the user modifies the default directory during installation he would need to adjust the pathnames in the appropriate command line above.
+
+The plugin capability of the present invention vastly extends the functionality of the present invention by permitting customized applications to perform function on incoming messages. It further allows the customized applications to interface with the shotgun application by way of a simple interface API . In addition the messages forwarded via the API to the customized application s use the powerful Channel and Filtering functions available to the Shotgun application.
+
+While the preferred embodiment of the invention has been illustrated and described herein it is to be understood that the invention is not limited to the precise construction herein disclosed and the right is reserved to all changes and modifications coming within the scope of the invention as defined in the appended claims.
+

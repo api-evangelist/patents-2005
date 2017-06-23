@@ -1,0 +1,87 @@
+---
+
+title: Magnetostrictive materials, devices and methods using high magnetostriction, high strength FeGa and FeBe alloys
+abstract: An alloy having a saturated magnetostriction of from about at least 150 ppm comprising:
+
+
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=08308874&OS=08308874&RS=08308874
+owner: The United States of America as represented by the Secretary of the Navy
+number: 08308874
+owner_city: Washington
+owner_country: US
+publication_date: 20051129
+---
+This application is a continuation in part of U.S. patent application Ser. No. 10 750 634 filed Dec. 24 2003 entitled Magnetostrictive Materials Devices and Methods Using High Magnetostriction High Strength FeGa and FeBe Alloys now abandoned which is a continuation in part of U.S. patent application Ser. No. 10 182 095 filed Jul. 24 2002 entitled Magnetostriction Devices and Methods Using High Magnetostriction High Strength FeGa Alloys now abandoned which was the National Stage of International Application No. PCT US01 02795 filed Jan. 29 2001 entitled Magnetostrictive Devices and Methods Using High Magnetostriction High Strength Alloys and this application is also a continuation in part of U.S. patent application Ser. No. 11 007 953 filed Dec. 7 2004 entitled Magnetostrictive Devices and Methods Using High Magnetostriction High Strength FeGa Alloys now abandoned which is a continuation of U.S. patent application Ser. No. 10 182 095 filed Jul. 24 2002 entitled Magnetostriction Devices and Methods Using High Magnetostriction High Strength FeGa Alloys now abandoned which was the National Stage of International Application No. PCT US01 02795 filed Jan. 29 2001 entitled Magnetostrictive Devices and Methods Using High Magnetostriction High Strength Alloys each of these applications is incorporated herein by reference.
+
+The invention described herein may be manufactured and used by or for the Government of the United States of America for governmental purposes without the payment of any royalties thereon or therefore.
+
+The present invention relates generally to magnetostrictive alloys devices and methods and more specifically to magnetostrictive materials devices and methods using rugged magnetostrictive alloys.
+
+With the emergence of smart material technology a need has arisen for rugged inexpensive highly magnetostrictive materials that have the ability to transduce large energies under high compressive stresses. Common metals such as iron numerous iron alloys and steels possess good mechanical properties and the ability to withstand shock environments but have very low magnetostrictions 10to 10 with many alloys having magnetostrictions near the lower value. Terfenol D various high magnetostriction rare earth Fecompounds and single crystals of modified cobalt ferrite possess huge magnetostrictions 10 at room temperature but are in general brittle and unable to withstand appreciable tensile stresses. To fill the gap between these materials attempts have been made to synthesize magnetostrictive composites using highly magnetostrictive Co ferrite or rare earth Fewith some type of binder.
+
+Accordingly it is an object of this invention to provide a highly magnetostrictive material with good physical strength.
+
+It is another object of this invention to provide a shock resistant highly magnetostrictive material.
+
+It is a further object of the present invention to provide a highly magnetostrictive material with sufficient strength to be used as a structural member.
+
+These and other objects of the present invention are accomplished by magnetostrictive materials devices and methods using an Fe based alloy having of from about 65 at to about 90 at Fe about 5 at to about 35 at Ga and optionally one or more additional non magnetic metals such as Al and Be and optionally one or more additional magnetic metals such as Co and Ni.
+
+The magnetostrictive alloys used in the magnetostrictive device and method of the presently claimed invention are based upon the body centered structure and have a room temperature saturation magnetostriction along the 100 axis of at least about 150 ppm typically about 200 ppm or more and often about 300 or more. While not intending to be bound by theory it appears that Ga and some other nonmagnetic metals such as Al substitute for iron in the crystal lattice distorting the lattice and enhancing the magnetostrictive properties of the material. It appears that the distribution of the added Ga and any other nonmagnetic metal is not completely random exhibiting some short range order. Thus the crystalline structure of the alloys of the present invention may be a hybrid or perhaps even a multiphase mixture including the iron phase the Bphase the DOphase and possibly the Lphase.
+
+The Fe based alloys used in the present invention should include at least about 5 at Ga in order to assure significant enhancement of magnetostrictive properties. The effects of Ga or a mixture of Ga and an additional nonmagnetic metal e.g. Al and or Be and or magnetic metal Co and or Ni upon the magnetostrictive performance of the alloys according to the present invention vary closely parabolically depending upon concentration. To achieve maximum magnetostriction the concentration of Ga should be as high as possible without introducing significant concentrations of secondary phases that lower magnetostriction. The concentration of Ga at which peak magnetostriction occurs varies depending upon how the alloys are formed. When the alloy is formed by furnace cooling a melt of Fe and Ga a peak magnetostriction occurs at about 15 17 at Ga. With rapid quenching rather than furnace cooling the peak magnetostriction moves to about 19 at Ga. A second magnetostriction peak occurs at about 27 at Ga for both quenched and slow cooled materials.
+
+An additional nonmagnetic metal such as Al may substitute for some of the Ga in order to reduce cost. An acceptable amount of Al is between 5 and 15 at .
+
+An additional nonmagnetic metal Be may increase the magnetostriction of the Fe alloys. R. Gersdorf prepared alloys of FeBe in which the Be concentration was up to 6.8 at . shows magnetostrictions of single crystals of Fe FeAl FeGa and FeBe in which the atomic percent of the nonmetal Al Ga and Be is between 2.5 at and 17 at . Be having an atomic percent of 11.3 and a magnetostriction 3 2 10 of greater than 150 ppm and is most impressive and unexpected.
+
+Impurities and additives may also be present in the alloys of the present invention. These impurities and other additional metals may be present as long as they do not significantly lower the magnetostriction of the alloys. Typically impurities and other additional metals are acceptable in amounts of 2 at or less and more often in amounts of 1 at or less.
+
+Single crystal iron gallium alloy can be prepared using cleaned 99.99 pure electrolyte iron and gallium. Measured quantities of each metal are melted together several times in an inert e.g. argon atmosphere. The buttons are re melted and drop cast into a Cu chill cast mold in order to obtain compositional homogeneity. The as cast ingots are degassed in an alumina crucible under vacuum by heating. In an argon atmosphere the temperature is increased to 1650 C. The ingot crucible is stabilized for 1 hour at this temperature and then withdrawn at a rate of 2 mm hr. 20 mm hr. Additionally oriented single crystals can be prepared through the use of a seed crystal properly oriented to the magnetic easy axis. The seed crystal was carefully packed into the base of the crucible and melting of the charge material was controlled in a manner that preserved the seed crystal. The seed ingot crucible was stabilized for 1 hour at 1650 C. and then withdrawn at a rate of 20 mm hr.
+
+Several different methods allow one to obtain single crystal like polycrystalline alloys according to the present invention. For example directional growth methods such as the Bridgman method typically used for single crystal growth may be modified so that crystal growth occurs at rates significantly greater than those typically used for single crystal growth. Such a method typically provides a polycrystalline material with a mixture of 100 crystallites with various orientations and good magnetostriction. shows the magnetostriction and magnetic moment of a growth textured rod of FeGa. While this method is generally faster than single crystal growth it is generally less expensive.
+
+Preferential alignment of polycrystalline material according to the present invention which should result in good magnetostrictive properties maybe obtained by using a sequence of hot rolling warm rolling with intermediate anneals and extended final texture anneal. The above described methods single crystal growth directional growth and hot and warm rolling of producing preferentially 100 aligned FeGa according to the present invention are further described in the EXAMPLES section of this application.
+
+Having described the invention the following examples are given to illustrate specific applications of the invention including the best mode now known to perform the invention. These specific examples are not intended to limit the scope of the invention described in this application.
+
+Measured quantities of electrolytic iron 99.99 pure gallium 99.999 pure and when used aluminum 99.999 pure were cleaned and are melted together as FeGa FeAl or FeGaAl alloys several times under an argon atmosphere. The resulting buttons of 40 g were re melted and the alloy drop cast into a Cu chill cast mold to obtain compositional homogeneity. Next the as cast ingot was inserted into an alumina crucible heated under vacuum up to 600 C. for degassing. The furnace was then backfilled with argon and the temperature increased to 1650 C. The ingot crucible was stabilized for 1 hour at this temperature and then withdrawn at a rate of 2 mm hr.
+
+Following crystal growth the samples were annealed at 1000 C. for 72 hours and furnace cooled. The as grown crystals were oriented along the 100 direction within 1 degree using back reflection Laue diffraction and finally cut into thin discs 3 inch diameter x 1 inch long rods for magnetostriction magnetization and elastic moduli measurements.
+
+Single crystals of FeBeand FeBewere prepared by Bridgman growth of arc cast ingots of electrolytic Fe 99.99 pure and Be 99.9 pure in alumina crucibles. The ingots were stabilized in the crucible for 1 hr at 1600 C. and lowered at a rate of 4 mm hr. Following growth the ingots were heat treated at 1000 C. for 168 hr and cooled at a rate of 10 C. hr. Although the equilibrium condition of these alloys below 700 C. contains the hexagonal FeBeLaves phase this phase was not present in the x ray diffraction patterns following heat treatment. While the diffraction patterns confirmed the b.c.c. structures the local ordering of Be and Fe on the b.c.c. lattice is not known. 100 and 110 oriented single crystal disks 0.3 cm 0.6 cm dia were cut from the boule by EDM machining for magnetostriction and magnetization measurements.
+
+Magnetostriction Measurements of and were Obtained from 77 K to Room Temperature Using Non Magnetoresistive Kyowa KFL 1 120 C1 11 Strain Gages.
+
+Measurements of resistivity were made using an HP3470A in a four wire mode. Temperature dependences of the magnetizations were obtained by using a Magnetic Instruments 7385 flux meter to measure flux changes with 20 turn 36 gage wire coils wrapped around the alloys. Magnetostrictions were taken at a field of 15 kOe.
+
+Magnetostriction results in FeBe alloys with Be concentrations up to 6.8 described in R. Gersdorf Ph.D. Thesis University of Amsterdam The Netherlands 1961 revealed the possibility of magnetostriction constant about 99 for Fe Be alloys. compares Be concentration dependences up to 17 . Both Fe Be and Fe Ga alloys have comparable increases up to 11 solute. This is somewhat surprising since Be is a smaller atom than Fe while Ga atoms are larger than Fe.
+
+A conventional dead weight apparatus was used to apply compressive loads to the samples indicated in i.e. FeGa FeAl and FeGaAl in rod form. Magnetic fields up to 1 kOe were applied to the samples from a solenoid energized by a constant current source. The magnetizations were calculated from the emf generated by a small pick up coil surrounding the center of the sample. Displacements were determined from the output of three linear variable differential transformers LVDT s and two or more strain gages. Typical room temperature magnetostriction and magnetization data under compressive loads are shown in and .
+
+Table I illustrates how the average values of piezomagnetic constant d and permeability for FeGadepend upon compressive stress.
+
+Thin 100 discs of the single crystal samples were cut from larger crystals and mounted in a cryostat for measurements of the saturation magnetostriction constants below room temperature. Constantan foil strain gages were attached along the 100 direction for the measurement of . Magnetostrictions measured as a function of angle between the strain gage direction and magnetic field direction showed that the magnetostriction indeed follows the simple cos angular dependence within 1 . No higher order terms were evident. shows the temperature dependence of the magnetostriction constants from 180 K to room temperature at 20 kOe. It should be noted that the maximum magnetostriction is not given by the symbol but by the symbol 3 2 . Also plotted on the figure is the temperature dependence of the saturation magnetization for a b.c.c. FeGaalloy taken from Kawamiya N. K. Adachi and Y. Nakamura in 33 1972 1318 1327. Some room temperature magnetostriction constants for various Fe based alloys are compared in Table II.
+
+In order to determine the magnitude of the magnetoelastic energy as well as to evaluate the technological usefulness of this alloy system it is important to know some elastic moduli in particular Young s modulus Poisson s ratio and the shear elastic constant c c. Note that the lowest order magnetoelastic energies for cubic crystals is given by b 3 2 c C and b 3c . Clearly for these Fe based alloys brepresents the major magnetoelastic component.
+
+For 100 oriented magnetostrictive rods the elastic constants cand ccan be calculated from Poisson s ratio p and Young s modulus Y measurements through the following relationships 1 1 1 2 and 1 1 2 from which c c Y 1 p .
+
+Young s modulus and Poisson s ratio were measured as a function of magnetic field on a sample of FeGaat room temperature. The stiff low field high stress Young s modulus is 77 GPa and Poisson s ratio is 0.38. Magnetoelastic energies and moduli for FeGa FeAl FeAland Fe are compared in Table III.
+
+The addition of Ga to Fe was found to increase the hardness of both polycrystal and single crystal samples. Vicker s hardness values calculated from measurements taken on alloys of FeGafor 15
+
+These examples show that inexpensive processing conditions may be used to obtain material with preferred 100 crystallographic texture direction along which maximum magnetostriction can be obtained.
+
+A specimen e.g. FeGa was produced by a 96 hot and warm rolling reduction of an as cast ingot. A disk specimen 7.9 mm in diameter was punched from the rolled material having a thickness of 0.38 mm. A subsequent anneal of the disk for 5 hr at 1000 C. induced secondary recrystallization and produced through thickness grains with diameters up to approximately 400 m. Orientation imaging microscopy OIM was used to map each grain and its crystallographic orientation.
+
+The strain states of the disk were analyzed for changes in the direction of the saturation magnetostriction vector from transverse to parallel with the rolling direction. The FEM simulations indicated 177 3 ppm relative to the rolling direction this falls between the measurements of 160 180 ppm collected in separate strain gauge installations. It should be noted that the experimental results are sensitive to minor changes in gauge location due to the large grain sizes and their wide range of crystallographic orientation.
+
+An as cast ingot e.g. FeGa was reduced by 99 with hot warm and cold rolling to a final thickness of 0.10 mm. A disk shaped specimen of the material 7.9 mm in diameter was then annealed at 590 C. for 1 h to affect stress relief without secondary recrystallization.
+
+The textured Fe Ga alloys could be made using the rolling processing method and may provide an inexpensive and very attractive alternative to existing rare earth based giant magnetostrictive materials. They would be cheaper than corresponding single crystal or directional growth textured materials and could be produced in larger quantities. A sequence of hot rolling two stage warm rolling with intermediate anneals should produce an iron gallium polycrystalline alloy material with 100 preferred orientation. Orientation imaging microscopy OIM technique was used to examine the evolution of texture.
+
+This process results in a structure consisting of through thickness grains and measured magnetostriction of 160 ppm in the RD.
+
+Obviously many modifications and variations of the present invention are possible in light of the above teachings. It is therefore to be understood that within the scope of the appended claims the invention may be practiced otherwise than as specifically described.
+

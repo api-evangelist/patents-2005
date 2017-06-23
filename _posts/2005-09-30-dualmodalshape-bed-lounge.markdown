@@ -1,0 +1,57 @@
+---
+
+title: Dual-modal-shape bed lounge
+abstract: Dual-modal-shaping capability is added as a new feature in bed lounges of the type having a fabric slip-cover enclosing foam padding on a main structure formed from plastic sheet material. User adjustment is provided for back tilt, head-rest tilt and height, arm-rest spacing, and back support location. Modal transition is provided by an internal mechanism that interlinks the two arm-rests via a weighted lock-pin that locks the arm-rests in place for normal use but that can be disengaged by merely inverting the bed lounge so the lock-pin drops out from the linkage gravitationally, thus allowing the arm-rests to be folded out to convert to an overall flat modal-shape that can be conveniently stored, e.g. under a bed or hanging in a closet. For re-deployment, when the bed lounge is manually placed in its normal modal-shape in an upright position, as the arm-rests are moved together to their normal spacing, the weighted lock-pin automatically drops back down into place so as to again lock and retain the bed lounge in its chair-like normal modal-shape.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=07284290&OS=07284290&RS=07284290
+owner: 
+number: 07284290
+owner_city: 
+owner_country: 
+publication_date: 20050930
+---
+The present invention relates to household bedding accessory furniture and more particularly it relates to a dual modal shape bed lounge that can be easily user converted back and forth between 1 a chair like normal modal shape that provides back support to a user seated upright on a flat surface such as bed and 2 a generally flat modal shape for convenient storage.
+
+For those who spend periods of time sitting in a bed or even on a floor or against a wall it is important to provide proper support to the body to avoid discomfort fatigue and or body deformation. Ordinary cushions and pillows fail to provide necessary support which requires a chair like bed lounge typically with at least a back portion with two attached arm rests one at each side and preferably a neck support head rest. To accommodate the needs of different individuals with regard to size weight age etc. the bed lounge is preferably provided with several user adjustment capabilities e.g. relating to tilt back arm rest spacing lower back support neck rest height and inclination.
+
+Bedding furniture in the field of this invention has been known under such names as bed bolster husband and study rest . Typically such items have been made entirely from foam material so that characteristically they lack support being overly soft and flexible and or they are inconveniently heavy.
+
+U.S. Pat. No. 5 423 098 to the present inventors disclosed an ergonomic BED LOUNGE made with a fabric cover enclosing foam padding over a main structure formed from plastic sheet material to provide the required strength while keeping the weight lighter than all foam construction. The Bed Lounge featured back inclination adjustment a built in adjustable lower back pillow a doubly adjustable neck pillow and side arm rests whose forward portions can be adjusted for end separation.
+
+U.S. Pat. No. 5 829 830 to Maloney discloses a removable SUPPORT INSERT FOR A HIGH CHAIR directed to positioning and supporting the upper torso of an infant seated in the high chair.
+
+It is a primary object of the present invention to provide further advantages and improvements in bed lounges with regard to convenience of storage in view of the three dimensional shape of known bed lounges and the fact that these are in use only for a small fraction of the time and must somehow be stored for the great majority of the time.
+
+It is a further object to provide a bed lounge whose normal three dimensional modal shape can be easily changed to a flat generally flat two dimensional modal shape for convenience and versatility regarding storage e.g. that can be stored unobtrusively under a bed or hanging in a closet.
+
+It is a still further object that the bed lounge be provided with a locking system that enables the user to easily deploy the three dimensional normal modal shape wherein the arm rests are made to be substantially locked in place generally perpendicular to the back portion and to easily release the locking system and convert to the flat two dimensional flat modal shape wherein the arm rest locking is released so the arm rests can be folded back to the generally flat modal shape for purposes of convenient storage.
+
+It is a further object that conversion back and forth between the flat modal shape and the normal modal shape be made easy for an ordinary unskilled individual to perform manually without the use of any tools.
+
+The above and further objects and advantages have been realized in the present invention of improvements to the bed lounge an internal mechanism interlinking the two arm rests includes a weighted lock pin that holds the arm rests in place with the bed lounge set up for use in the normal modal shape. The arm rest linkage can be disengaged by merely inverting the bed lounge so that the lock pin drops out of place from the linkage gravitationally thus unlocking and allowing the arm rests to folded out to convert to the overall flat shape that can be conveniently stored e.g. under a bed or hanging in a closet. For re deployment when the bed lounge is manually set up to its normal upright position the weighted lock pin automatically drops back into place engaging the arm rest linkage so as to again lock and secure the bed lounge and its arm rests in its chair like normal modal shape for usage.
+
+Unlike the previous versions of the bed lounge which were made to be essentially permanent in the fixed three dimensional normal usage modal shape shown in the bed lounge of the present invention is originally stamped out from a sheet of flat material in one piece the main body that includes the three main components i.e. the back portion A and the two arm rests which are each attached by a living hinge at the corner. A pair of arm rest extension portions A attached in a swivel manner to arm rests typically using brass eyelets are also made adjustable for end separation by living hinge score lines as shown.
+
+A locking mechanism automatically secures the bed lounge in the normal usage modal shape shown but the locking can be readily released by the user to convert the bed lounge back to its original flat shape for convenient storage.
+
+At the lower left of a mounting flange of a pivot bracket is attached by a nylon tie strip A extending through a pair of holes provided in each arm rest portion B.
+
+Indicated at the left hand side in broken lines are two alternative arm rest positions within the separation adjustment range of the arm rest extension portion A enabled by bend line C.
+
+At the center of sloping panel E an oval opening H exposes the top end of a cylindrical housing A that contains a gravity operated lock pin. Immediately beneath is seen an exposed fastening tab of a guide plate extending through an opening provided in sloping panel E.
+
+A pair of link strips and each have one end pivotally attached to a corresponding one of the pivot brackets while their opposite ends overlap and are retained in a guide plate which along with bottom panel J constrains the link strips and laterally while allowing them to slide longitudinally.
+
+The normal modal shape shown is secured by a cylindrical metal lock pin captivated in a cylindrical container A which is closed at the upper end and affixed to a circular opening in guide plate at the lower end as shown. Lock pin traverses a lock hole configured in each link strip and as shown thus locking them in place and preventing them from moving longitudinally while they serve to hold arm rest portions B in place as shown in .
+
+Lock pin is constrained to only vertical travel by containment within cylindrical container A affixed to guide plate .
+
+To convert from the normal modal shape to the flat storage modal shape the bed lounge is inverted by the user causing the lock pin to drop down out of the link strip lock holes and as shown in causing an audible sound thus allowing the link strips and to move longitudinally allowing the two arm rests to be swivelled apart to where they become aligned with the back portion A as shown in . The bed lounge has thus become converted to its flat storage modal shape ready to be stored on a horizontal surface e.g. on a floor under a bed or hanging vertically e.g. in a closet.
+
+To convert back from the flat storage modal shape to the chair like normal modal state the bed lounge is manually set up by the user to its normal upright orientation. The lock pin now rests on top of the upper link strip allowing the link strips and to move longitudinally in opposite directions constrained between guide bracket and bottom panel J as the user moves the arm rests toward each other. When the arm rests reach their normal location the lock holes A and A in the link strips and will line up with each other and with the lock pin which will then drop down through lock holes A and A to the position shown in with an audible sound thus securing the bed lounge in the chair like normal modal shape as shown in ready for use. This gravity lock pin system locks the arm rests in place instantly automatically positively and securely with no special effort strength or skill required on the part of user other than merely setting the bed lounge up in place. Thus mode conversion can be readily performed by anyone including users to whom the bed lounge is particularly direction i.e. those who may be weak handicapped or otherwise incapacitated by age arthritis or other afflictions and who absent the present invention would be over challenged by a need to use tools in converting the bed lounge between the two modes.
+
+The component parts of the dual modal shape mechanism described above in connection with i.e. pivot brackets link strips and guide plate and lock pin container A may be made from suitably robust plastic material e.g. thick Lexon or polystyrene or from metal preferably aluminum for light weight. For the internal structure which includes portions A F the recommended material is internally corrugated sheet plastic such as polypropylene 0.22 thick with interior corrugations running vertically.
+
+The dual modal shape principle which has been directed beneficially as an improvement modification of the bed lounge previously patented by the inventors can also be practiced beneficially as applied to simplified versions and other variations thereof as well as to practically any similar product in the field of endeavor having a back and a pair of arm rests. If additionally a seat portion is involved that could also be made and arranged to fold out to a flat plane in a similar manner to obtain the benefits of the dual modal shape capability in accordance with the principles of the present invention.
+
+The invention may be embodied and practiced in other specific forms without departing from the spirit and essential characteristics thereof. The present embodiments are therefore to be considered in all respects as illustrative and not restrictive the scope of the invention being indicated by the appended claims rather than by the foregoing description and all variations substitutions and changes which come within the meaning and range of equivalency of the claims are therefore intended to be embraced therein.
+

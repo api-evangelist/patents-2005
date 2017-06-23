@@ -1,0 +1,241 @@
+---
+
+title: Method for evaluating xpath-like fragment identifiers of audio-visual content
+abstract: A method of retrieving a plurality of resource fragments from a audio-visual resource that is encoded using a hierarchical addressing model for the class of resources of which the audio-visual resource is a member is disclosed. The method comprises inputting a URI reference () comprising a Universal Resource Identifier () and a complex fragment identifier () comprising a plurality of audio-visual resource specific location steps. Thereafter the method comprises a step of locating the audio-visual resource using the Universal Resource Name, and establishing () a logical representation () of the structure of the audio-visual resource. Then the method iteratively evaluates the fragment identifier location steps () against the logical representation () to resolve the complex fragment identifier () into a set of explicit fragment references () configured to explicitly address each of the plurality of resource fragments.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=07984037&OS=07984037&RS=07984037
+owner: Canon Kabushiki Kaisha
+number: 07984037
+owner_city: Tokyo
+owner_country: JP
+publication_date: 20050715
+---
+The present invention relates generally to the retrieval of audio visual data and in particular fragments of data from an audio visual resource.
+
+The advent of technology providing mass market access to the Internet places vast amounts of on line information within relatively easy reach. The World Wide Web WWW hereunder the Web underpins much of the growth of Internet use particularly because of the ease of use and also due to the intuitive user interface presented by Web browsers. Universal Resource Identifiers URIs are a ubiquitous addressing feature used to locate target resources in the Web context. This is particularly relevant when Web pages are used in conjunction with a Common Gateway Interface CGI scripting application which allows the Web page to become in essence the front end of a myriad of databases accessible over the Internet.
+
+Notwithstanding the explosive progress described however a Web user is in most cases unable to drill down beyond a certain level of data and must in many cases down load an inconveniently large and cumbersome amount of information in order to locate useful information. Illustrating this fact consider investigating all flights from London to Moscow departing from Heathrow airport on a given date. In order to make a selection based on a number of criteria such as departure time airline number of stops and so on a long list of flights typically needs to be down loaded and scanned either manually or using a back end application on a local personal computer PC .
+
+Further exemplifying the problem certain types of data such as for example audio visual AV data typically manifest themselves as monolithic blocks of information. The internal structure of such data whether it be a particular video segment or fragment in a movie or a specific movement in a symphony is neither visible nor addressable or consequently accessible in terms of fragments.
+
+Taking a more extreme example off line audio visual data in the form of celluloid film archives paper based libraries and a wealth of other sources are also not addressable and are thus invisible and inaccessible at the fragment level. Although particular books can be located by call number and location in a library specific chapters thereof are not visible or addressable and consequently not accessible.
+
+Extensible Markup Language XML provides a drill down capability for a limited sub set of on line information namely information which is coded in XML. The overwhelming bulk of available information has been produced in other programming formats such as Hypertext Markup Language HTML or alternatively is in hard copy form in physical archives and libraries. The aforementioned types of information are referred to as legacy information.
+
+Australian Patent No. 759681 discloses an approach referred to as AV addressing being a shorthand way of referring to audio visual addressing for addressing audio visual fragments by constructing a logical model for the class of audio visual resources of interest. In accordance with the EBNF syntax convention adopted at 42 this addressing scheme is also referred to as the mp addressing scheme.
+
+The logical model is used to form a hierarchical representation of the audio visual resource including a representation of the audio visual fragment of interest. A fragment identifier is used in an addressing scheme that is capable of addressing fragments of the audio visual resource. Evaluating an audio visual fragment identifier can be difficult however as the disclosed approach does not deal with well defined tokens of a single media format. Instead the approach is concerned with multiple media formats and logical units that are conceptual rather than physical in nature. Furthermore the semantics of the disclosed audio visual addressing scheme can lead to very complex expressions which are difficult to resolve.
+
+It is an object of the present invention to substantially overcome or at least ameliorate one or more disadvantages of existing arrangements.
+
+According to a first aspect of the present disclosure there is provided a method of retrieving a plurality of resource fragments from a audio visual resource that is encoded using a hierarchical addressing model for the class of resources of which the audio visual resource is a member the method comprising the steps of 
+
+inputting a URI reference comprising a Universal Resource Name and a complex fragment identifier comprising a plurality of audio visual resource specific location steps 
+
+iteratively evaluating the fragment identifier location steps against the logical representation to resolve the complex fragment identifier into a set of explicit fragment references configured to explicitly address each of the plurality of resource fragments.
+
+According to another aspect of the present disclosure there is provided an apparatus for retrieving a plurality of resource fragments from a audio visual resource that is encoded using a hierarchical addressing model for the class of resources of which the audio visual resource is a member the apparatus comprising 
+
+means for inputting a URI reference comprising a Universal Resource Name and a complex fragment identifier comprising a plurality of audio visual resource specific location steps 
+
+means for iteratively evaluating the fragment identifier location steps against the logical representation to resolve the complex fragment identifier into a set of explicit fragment references configured to explicitly address each of the plurality of resource fragments.
+
+According to another aspect of the present disclosure there is provided an apparatus for retrieving a plurality of resource fragments from a audio visual resource that is encoded using a hierarchical addressing model for the class of resources of which the audio visual resource is a member the apparatus comprising 
+
+code for inputting a URI reference comprising a Universal Resource Name and a complex fragment identifier comprising a plurality of audio visual resource specific location steps 
+
+code for iteratively evaluating the fragment identifier location steps against the logical representation to resolve the complex fragment identifier into a set of explicit fragment references configured to explicitly address each of the plurality of resource fragments.
+
+According to another aspect of the present disclosure there is provided a computer program product including a computer readable medium having recorded thereon a computer program for directing a processor to execute a method for retrieving a plurality of resource fragments from a audio visual resource that is encoded using a hierarchical addressing model for the class of resources of which the audio visual resource is a member the program comprising 
+
+code for inputting a URI reference comprising a Universal Resource Name and a complex fragment identifier comprising a plurality of audio visual resource specific location steps 
+
+code for iteratively evaluating the fragment identifier location steps against the logical representation to resolve the complex fragment identifier into a set of explicit fragment references configured to explicitly address each of the plurality of resource fragments.
+
+Where reference is made in any one or more of the accompanying drawings to steps and or features which have the same reference numerals those steps and or features have for the purposes of this description the same function s or operation s unless the contrary intention appears.
+
+It is to be noted that the discussions contained in the Background section and that above relating to prior art arrangements relate to discussions of documents which form public knowledge through their publication. Such should not be interpreted as a representation by the present inventor s or patent applicant that such documents or devices in any way form part of the common general knowledge in the art.
+
+In the CD ROM can be portrayed in a description as containing a list of songs under a title where the song has indices and which point to particular segments within the song . Terminology such as songs is used for illustration in this part of the description noting that in fact as described the audio content is actually stored on CD ROM as noted. For example in classical music where the song can be an individual movement of a symphony and therefore can be quite long the index ie can point to a trumpet solo and the index r ie can point to a violin solo of interest. Depending upon the capabilities of the server and juke box in the user can address the desired CD ROM and address a desired index . It is noted however with reference to both and to that the user is limited to addressing and so accessing material only down to the level of the particular CD ie or perhaps the specified predefined index ie . It is not possible to drill down to an arbitrary further specified level of fine grain detail.
+
+Turning to the hierarchical representation comprising descriptions and is shown in a system content in more detail. By using the fragment identifier derived from the hierarchical representation in conjunction with the URI see an extended URI commonly referred to as a URI reference is shown to incorporate both the URI described in relation to and an additional fragment identifier . The URI reference can thus be used as an address to the CD and further to the desired fragment .
+
+The fragment of audio content specified by the fragment identifier Title song1 block 2 block j see in and the fragment of video content specified by the fragment identifier Title frame1 x1 x2 y1 y2 see in are examples in which a fragment identifier returns a single audio visual content fragment. More complex fragment identifiers can also be constructed in which a single fragment identifier returns more than one audio visual content fragment eg see 8 11 .
+
+Having provided an illustrative description of the disclosed AV addressing approach a more detailed description is now provided. XML is utilised as a basis for describing a preferred arrangement of the disclosed AV addressing approach. This is both from the standpoint of conceptual and notational convenience and also because XML has significant support as a recommendation in the context of the World Wide Web Consortium W3C .
+
+It is shown how in one arrangement the XML Path Language XPath can be extended and used in an AV addressing approach in order to locate fragments of non XML based audio visual content.
+
+The XML Linking Language XLink uses URI s for locating objects. In principle modified URIs can be used for locating any resource that has identity for instance an electronic document an image a service a collection of other resources a person an corporation or a bound book in a library. Each resource corresponds to an entity or set of entities in a conceptual model. URI s can therefore be used for locating or referencing resources other than XML documents. However the XPath and XML Pointer Langauge XPointer schemes that XLink currently uses for addressing the internal structure of data objects can only be used to locate fragments of XML documents.
+
+As an introduction the use of XLink XPointer and XPath are considered in the limited context of XML documents. XPath models an XML document as a tree of nodes. There are seven types of nodes namely root nodes element nodes text nodes attribute nodes namespace nodes processing instruction nodes and comment nodes. XPath uses a compact non XML syntax to facilitate the use of XPath within URI s. An XPath location path consists of a separated list of location steps. Each location step has the form axis node test predicate 1 
+
+where axis specifies the tree relationship between the nodes selected by the location step and the context node node test specifies the node type or the name and predicate refines the set of nodes selected by the location step. A location step may specify one or more predicates each enclosed in a pair of square brackets. Boolean expressions of XPath functions and XPath location paths may be used in a predicate to further refine the set of nodes selected by the location step. Take the example of the absolute location path child para position 1 child is the name of the axis para is the node test and position 1 is a predicate that uses the XPath function position . As a second example the relative location path para attribute type warning selects all para children of the context node that have a type attribute with value warning and the expression para attribute type warning 5 selects the fifth para child of the context node that has a type attribute with value warning .
+
+A number of syntactic abbreviations allow common cases to be expressed concisely as follows is short for attribute e.g. attribute type can be abbreviated as type 2 is short for descendant or self node 3 .is short for self node and 4 ..is short for parent node . 5 
+
+An axis specifies the tree relationship between the nodes selected by the location step and the context node. XPath axes include child parent descendant ancestor following sibling preceding sibling following preceding attribute namespace self descendant or self and ancestor or self The default is the child axis. XPointer extends XPath adding the string and range axes.
+
+A node test specifies the node type or the name such as the name of an element or an attribute of the nodes selected by the location step.
+
+There can be zero or more predicates for refining the set of nodes selected by the location step. Predicates are evaluated for each candidate location along the specified axis and typically test the element type attributes positions and or other properties of the candidate nodes.
+
+A function library provides a set of predicate functions such as count position id last etc. Each function takes zero or more arguments and returns a single result. Like XPointer a new scheme can define new functions to extend the core functions of XPath.
+
+Each location step is evaluated with respect to a context. The context is initially the document root or more generally the results of a prior location step. The node set selected by the location step is the node set that results from generating an initial node set from the axis and node test and then filtering that node set by each of the predicates in turn.
+
+Some examples of XPath location paths are as follows doc chapter 2 section 3 6 selects the third section of the second chapter of doc chapter contains string title Overview 7 selects the chapter children of the context node that have one or more title children containing the text Overview child self appendix or self index 8 selects the appendix and index children of the context node child self chapter or self appendix position first 9 selects the first chapter and appendix children of the context node para type warning 10 selects all para children of the context node that have a type attribute with value warning para id 11 selects all the para children of the context node that have an id attribute.
+
+XPath operates on the logical structure of an XML document this logical structure being defined either explicitly by a Document Type Definition DTD or implicitly by arrangement of tags. For instance the examples given in the previous section assumed an XML document with the structure in Extended Backus Naur Form ENBF as follows doc toc chapter appendix index 12 chapter section 13 section para 14 appendix section 15 where toc means table of contents means one or more means zero or more and the composite description presented above describes in expanded form a document comprising a table of contents one or more chapters zero or more appendices and an index where each chapter comprises one or more sections where each section comprises one or more paragraphs and finally where each appendix comprises one or more sections.
+
+In an XML document each of these structures is marked by a pair of appropriately named tags. The tag markup allows the logical structure of the document to be determined unambiguously. Hence any application that understands the syntax of XML can determine the location of the document s components. Any application that understands the XPath and XPointer notations can use an URI with an XPath XPointer fragment identifier to locate parts of the document.
+
+Audio visual or AV content is not stored as XML documents and cannot be marked up. However given an unambiguous logical structure or model a modified XPath location addressing method referred to herein as an AV addressing method can be used. Hence for each class of AV content in the first instance an unambiguous logical structure must be defined and in order to make it widely accessible the logical structure should preferably be published. By an unambiguous logical structure or model it is meant that different persons and applications will segment given content in exactly the same way given the model.
+
+Considering one type of AV content for instance Digital Video format as used by digital video cameras this can be modelled as dv frame 16 where this means a digital video comprising one or more frames.
+
+In the case for example where compatible digital video cameras generate meta data to represent and record the instances the camera starts recording designated a REC event a shot can be defined as an interval between two REC event. In this case the model for DV format is dv shot 17 shot frame 18 meaning a digital video comprising zero or more shots each shot comprising one or more frames.
+
+As another example the logical structure of Compact Disc Audio can be modelled as follows CDAudio track 19 track channel channel index 20 channel sample 21 meaning an audio CD comprising zero or more tracks each track comprising two channels and zero or more indices and each channel comprising zero or more samples.
+
+Other data types include Video Manager Information files Video Title Set files Program Chain Information files still picture Video Objects attributes for Title Part of Titles and Menus Time Map Tables Part of Title Search Pointers and Navigation Commands.
+
+DVD Video content is broken into titles and chapters or parts of titles . Titles are made up of cells linked together by one or more program chains PGC . Individual cells can be used by more than one PGC. Different PGCs define different sequences through mostly the same material. Additional material for camera angles and branching is interleaved together in small chunks. The DVD player jumps from chunk to chunk skipping over unused angles or branches to stitch together the seamless video.
+
+One logical model for DVD Video is dvdVideo mainMenu title subpicture file 22 mainMenu menu 23 menu menu 24 title chapter 25 chapter view audio subtitle 26 view frame 27 audio channel 28 channel sample 29 
+
+The previous logical models each relate to a class of AV content namely digital video compact disc audio and digital video disk. As noted the application of the logical models to the associated AV content produces hierarchical representations of the AV content which supports addressing of fragments of the content. A more detailed description of the AV addressing approach is provided commencing at 42 .
+
+Turning to the aspect of addressing each location step is evaluated with respect to a context. The context is initially the root node dvdVideo in this case. In general the context is the results of a prior location step. The node set selected by the location step is the node set that results from generating an initial node set from the axis and node test and then filtering that node set by each of the predicates in turn.
+
+In the step the URI portion of the URI reference is used to locate a resource. The URI portion has the following form http www.apxcom.com products dvd0111 31 
+
+In a following step a root of the fragment address is used to determine a content type and consequently an associated logical model which has already been defined in the definition sub process in . The root has the following form in the URI reference dvdVideo 32 
+
+In a following step the logical model which is equivalent to the logical model in is used to set the initial context to the root node of the fragment.
+
+Thereafter a decision step determines whether the aforementioned steps have determined the last location step required to locate the desired resource fragment. If the last location step has been determined the process is directed according to a YES arrow to a step in which the located resource fragment is processed. The step is a post location processing step.
+
+If the decision step determines that the last location step has not been determined then the process is directed according to a NO arrow to a step which evaluates the next location step within the current context. This is described in more detail with reference to . Thereafter in a step node s are selected that satisfy the specified selection criteria see for description of these criteria . In a following step the context is set to the node s selected and the process is then directed according to an arrow to the testing step .
+
+In a first step which follows the decision step in as depicted by the arrow a hierarchical relationship specified by the axis is used to select a set of nodes within the current context. Thereafter in a step the node test is performed thereby selecting nodes that are of the specified node type or node name from the current node set. In a following step the predicates are applied to each node in the current node set selecting only those nodes that satisfy the predicates.
+
+The described AV location scheme can utilising a notation and mechanism similar to those of XPath XPointer locate analog and digital AV content within a database or a plurality of databases.
+
+A set of named functions are defined for the AV location scheme. For instance the following function is used for determining whether the current context is within the specified time time startTime endTime 34 
+
+Furthermore the following function is used for determining whether the current context is within the time specified by the start and end timecodes. timecode startTimecode endTimecode 35 
+
+The functions can be used for evaluating expressions the evaluation always occurring with respect to the current context.
+
+In addition new axes can be added for instance a time axis and a region axis for locating temporal and spatial segments of the data. The incorporation of these axes provides additional power to the concept of fragment addressing and allows drilling down to different aspects of the AV content.
+
+The temporal axis together with its time node test selects within the current context components that occur within the specified start and end time. The current context is taken as starting at time zero and progressing continuously through time in normal play time. If the end time is not specified it is taken to be the same as the start time and the component that occurs at or closest to the specified start time is selected. TemporalLocationStep TemporalAxis time StartTime EndTime 36 TemporalAxis temporal 37 TimeNotation 0 9 38 StartTime TimeNotation 39 EndTime TimeNotation 40 For example http www.apxcom.com products dvd0111 mp dvdVideo title 2 time 0 900 41 selects the first 15 minutes the second title of the specified DVD. This example is designated example 41 .
+
+Turning to a preferred arrangement of the AV addressing method is described. Selection of the preview reference on the main XML document activates a link depicted by an arrow which is directed to another XML document . This latter document describes preview AV material at the fragment level and selection of a reference results in a link depicted by a dashed arrow pointing to an AV fragment using an extended URI . The portion of the URI before the hash relates to VHS Preview content designated 01100 which is a product of a fictitious company called movies . The portion of the URI after the hash is an AV pointer pointing to the second video of the vhs tape and in particular to a segment starting 900 seconds after the start of the documentary and ending 1800 seconds after the start of the documentary.
+
+The computer system comprises a computer module input devices such as a keyboard and mouse output devices including a printer and a display device . A Modulator Demodulator Modem transceiver device is used by the computer module for communicating to and from a communications network for example connectable via a telephone line or other functional medium. The modem can be used to obtain access to the Internet and other network systems such as a Local Area Network LAN or a Wide Area Network WAN . The computer module can also access a remote jukebox in this manner where the juke box contains a CD ROM containing two AV fragments .
+
+The computer module typically includes at least one processor unit a memory unit for example formed from semiconductor random access memory RAM and read only memory ROM input output I O interfaces including a video interface and an I O interface for the keyboard and mouse and optionally a joystick not illustrated and an interface for the modem . A storage device is provided and typically includes a hard disk drive and a floppy disk drive . A magnetic tape drive not illustrated may also be used. A CD ROM drive is typically provided as a non volatile source of data. The components to of the computer module typically communicate via an interconnected bus and in a manner which results in a conventional mode of operation of the computer system known to those in the relevant art. Examples of computers on which the embodiments can be practised include IBM PC s and compatibles Sun Sparcstations or alike computer systems evolved therefrom.
+
+Typically the application program for AV addressing is resident on hard disk drive and read and controlled in its execution by the processor . Intermediate storage of the program and any data fetched from the network may be accomplished using the semiconductor memory possibly in concert with the hard disk drive . In some instances the application program may be supplied to the user encoded on a CD ROM or floppy disk and read via the corresponding drive or or alternatively may be read by the user from the network via the modem device . The CD ROM can also contain AV fragments which are referred to in relation to and . Still further the softward can also be loaded into the computer system from otehr computer readable medium including magnetic tape a ROM or integrated circuit a magento optical disk a computer readable card such as PCMCIA card and the Internet and Internets including email transmissions and information recorded on websites and the like. The foregoing is merely exemplary of relevant computer readable mediums. Other computer readable mediums may be practiced without departing from the scope and spirit of the disclose addressing approach.
+
+The method of addressing an arbitrary fragment of an AV resource may alternatively be implemented in dedicated hardware such as one or more integrated circuits performing the functions or sub functions of addressing. Such dedicated hardware may include graphic processors digital signal processors or one or more microprocessors and associated memories. The dedicated hardware described can be incorporated into specialised or general purpose equipment which addresses AV content.
+
+Adoption of XML as a notation for describing the preferred AV addressing arrangements is a convenient mechanism for describing the arrangements. It also allows a consistent view and addressing mechanism for both XML and non XML resources. As noted previously however this is not an essential feature of the disclosed addressing techniques.
+
+The disclosed AV addressing schemes are intended to provide a high level of functionality for addressing locations within an audiovisual resource. The AV addressing approach is based on W3C Recommendations XPath 1.0 and XPointer Framework and adds to these standards the ability to address
+
+The AV addressing scheme also referred to as the mp audiovisual addressing scheme is defined by the following EBNF syntax MediaPointer MediaPointerSchemeName MediaPointerSchemeData 42 MediaPointerSchemeName mp 43 
+
+The MediaPointerSchemeData complies with the XPath abbreviated syntax. Therefore it consists of a list of separated location steps defined as follows MediaPointerSchemeData LocationStep 44 LocationStep AxisSpecifier NodeTest Predicate 45 Predicate PredicateExpression 46 
+
+A LocationStep may contain one or several predicates to further refine the set of selected node. XPath defines a Core Function library that contains functions to be used in a predicate.
+
+Moreover the audiovisual addressing scheme defines an extension of the XPath Syntax which consists of the additional axes node tests and functions examples of which are shown in the following Table 2 
+
+Considering a situation in which the AV resource is located in the juke box see that is accessible by the computer module over the network in order to locate fragments of the CD ROM the computer module parses and evaluates the corresponding URI reference that contains a fragment identifier based upon the abovementioned audiovisual addressing scheme. The URI reference can be input into the computer module using the keyboard or can be provided to the computer module over the network . When the fragment data contains location steps that select logical units of a logical model eg in the processor has to resolve the location steps against the particular logical model. Evaluation fails if the logical model is unknown to the computer module .
+
+While an audiovisual fragment identifier is similar to its XPath counterpart evaluating an AV fragment identifier is more complex as the fragment identifier is not based upon the well defined tokens i.e. XML elements and attributes of a single media format i.e. XML . Instead AV addressing encompasses multiple media formats text audio video and so on and logical units that are conceptual rather than physical in nature. Furthermore the semantics the AV addressing scheme inherited from XPath are very flexible and can thus lead to very complex expressions.
+
+The process has an mp Fragment Parser that parses the mp fragment identifier into a sequence of location steps . After testing in a step whether there are any further location steps to process and if the step returns a YES then an mp Fragment Evaluator evaluates the next location step in the sequence . For each location step the evaluator first maps in a step the location step to computational operations or basic system operations that control devices and handle media data. Thus in the present example and as shown in the step maps in a first step CDAudio to operation OPEN CD maps in a second step track 1 to CDAudio.setTrack 1 and maps in a third step time 30 to CDAudio.setStartTime 30 . The evaluator then evaluates in a step the effect of the aforementioned operation s as they relate to the content currently referenced by an explicit fragment reference to thereby refine the set of explicit fragment references . Thus in the present example and as shown in the step in a first step instantiates CDAudio object and calls OPEN CD the step in a second step sets the track attribute of CDAudio to 1 and the step in a third step sets start time of CDAudio to 30 s. The explicit fragment reference is thus updated each time the process loops through the steps and . Accordingly in the present example and as shown in the step in a first step instantiates and initializes a CDAudio object as follows Obj track 1 start time 0
+
+The process then returns to the step . After all the location steps of have been processed the process is directed by a NO arrow from the step to the content processing step which processes the desired content referenced by the explicit fragment reference .
+
+The aforementioned URI reference uses an URN Universal Resource Name to reference the content which in this case is the Audio CD . The URI reference also includes an mp fragment identifier for retrieving and playing say the fragment of the Audio CD .
+
+Then in the step of the mp Fragment Identifier Parser parses the following fragment identifier mp CDAudio Track 1 time 30 51 
+
+In the step the mp Fragment Evaluator maps the location steps CDAudio Track 1 and time 30 respectively to the following operations 
+
+The step evaluates the effect of executing the relevant operations 53 to thereby update an explicit fragment reference. After all the location steps have been evaluated each location step having the effect of updating the explicit fragment reference the Content Processor is directed by the explicit fragment reference to call the operation 1 30 to play the required temporal fragment of track 1 of the CD.
+
+The above approach is preferably used only where simple or a small number of mp expressions need to be supported. This is mainly due to the fact that the use of predicates in XPath and hence mp expressions is extremely flexible and predicate functions can be combined in a large number ways. As an illustration of this complexity the following mp fragment identifier can be specified the fragment identifier 54 is shown in three segments but actually constitutes a single string 
+
+Accordingly the equivalent document approach instead of mapping location steps to a sequence of computational or system operations first constructs an XML model or an equivalent logical representation of the structure of the resource being addressed such as the CD in and then evaluates the mp expression against the XML model using an extended XPath evaluator. The extended XPath evaluator implemented new node tests and predicate functions to support the spatio temporal axes of the mp Audiovisual Addressing Scheme.
+
+The URI reference includes the following mp fragment identifier mp CDAudio Track 1 time 30 54B which is used to retrieve a fragment of the audiovisual resource . The URI reference see 54A has the following URI part um aParticularAudioCD 54C which is used to locate the resource . The process has the mp Fragment Parser that parses the mp fragment identifier 54B into the sequence of location steps .
+
+Thereafter an mp Fragment Evaluator evaluates each location step in turn after firstly initializing the selected node set to an XPath node that represents the entire resource . The aforementioned selected node set serves as a set of explicit fragment references and is equivalent to the explicit fragment reference of in .
+
+Considering the mp evaluator step a first decision sub step checks whether any more location steps are available for processing. If the answer is YES then the process proceeds according to a YES arrow to a step . The step tests the whether the location step being considered is the first location step. If this is the case then the process follows a YES arrow to a step which constructs an XML model of the resource which is referenced by the first location step. The step firstly determines whether the first ie the root location step has a spatio temporal axis indicating that the resource being referenced by the URI is an audio visual resource or a non spatio temporal axis indicating that the resource being referenced by the URI is not an audio visual resource . If the root location step has a non spatio temporal axis then the resource is deemed to be associated with a pre defined logical model stored for example in a database see . Examples of pre defined logical models for CDAudio and DVD Video are presented in APPENDIX A. Such pre defined logical models are typically industry standards set for example by the record and film industry. If on the other hand the root location step is a spatio temporal axis then a logical model for the resource is determined by inference from the resource URI and from meta data associated with the resource . An example of meta data for an Audio CD is presented in APPENDIX B. Accordingly if the root location step has a spatio temporal axis the step collects from meta data on the resource or associated with the resource and stored for example in the database see information that is relevant to the proposed logical model for the resource . The step uses this collected information to construct the XML representation of the resource .
+
+Therefore in summary the step provides the logical model for the resource this model being either pre defined if the root location step is non spatio temporal or inferred from the URI of the resource or from meta data associated with the resource if the root location step is spatio temporal.
+
+Thereafter for each location step apart from the first step and in a manner similar to that used in a typical XPath evaluator the evaluator projects in a step the currently selected node set to the axis specified by the location step. Thereafter a step evaluates the node test to select the nodes projections on the new axis. For the present example 54A the selected node set initially contains all elements. The step adds the Attribute start time to the first track. Following the step the selected node set has been refined to a first element only. A following step evaluates the predicates one by one to refine the selected node set.
+
+In the case of spatio temporal axes it is impractical to define the XML elements to the level required to represent discrete time units as well as pixels and voxels. In order to address this issue the steps and which respectively perform spatio temporal node tests and predicate evaluations add special attributes to the selected node set of the XML model to provide the desired degree of resolution in the spatio temporal dimensions.
+
+In an alternate arrangement instead of adding special attributes special child elements may be added to serve the same function.
+
+However the added child elements may interfere with subsequent location steps. For instance if the following location step selects all the child nodes of each of the currently selected nodes then the added child elements will be selected as well unless the evaluator ignores all elements added by the evaluator. This approach adds complexity to the evaluator and hence is not preferred.
+
+After all the location steps have been processed the final set of selected nodes is processed by the Content Processor .
+
+A following step determines if any further location steps are available for processing. If this is the case then a following step determines whether the location step currently being considered is the first location step. If so then the process follows a YES arrow to a step . The step determines if the root location step has a spatio temporal axis. If so then a subsequent step fetches a pre defined XML model for the resource. The process is then directed back to the step . If the step determines that the root location step does not has a spatio temporal axis then the process is directed from the step to a step which fetches meta data for the resource in question. A following step builds a model for the resource from the meta data and the URI obtained in the step . The process is then directed back to the step .
+
+Returning to the step if the location step in question is not the first such step then the process is directed by a NO arrow to the step see . A first sub step in the step determines the axis specified by the location step in question. Then a step projects the selected node set to the axis. The process is then directed to the step see .
+
+A first sub step of the step performs a node test after which a step determines whether special attributes are to be added. Special attributes may be added when spatio temporal axes and node tests are processed. If this is the case then the process is directed by a YES arrow to a step that adds the special attributes. The process is then directed to the step see . If special attributes are not required then the process is directed by a NO arrow from the step to the step .
+
+A first sub step of the step evaluates the predicates. Then a step determines whether special attributes are to be added. Special attributes may be added when spatio temporal axes node tests or functions are processed. If this is the case then the process is directed by a YES arrow to a step that adds the special attribute. The process is then directed to a step that refines the selected node set. If a special attribute is not required then the process is directed by a NO arrow from the step to the step . The process is directed from the step back to the step .
+
+Returning to the step when no further location steps are available for processing then the process is directed by a NO arrow to a step that processes the content according to the refined selected node set. The process then terminates at a step .
+
+As an example let s assume that a consumer device has been passed the same URI reference urn aParticularAudioCD mp CDAudio Track 1 time 30 56 that includes a mp fragment identifier for retrieving and playing a fragment of an Audio CD. Again we assume that the following URI refers to a CD that is in a local CD drive and the same set of basic operations see and Table 1 is supported by the system.
+
+In the step the mp Fragment Identifier Parser parses the following fragment identifier mp CDAudio Track 1 time 30 58 The parsing operation produces the following location steps 
+
+In the step the mp Fragment Evaluator opens the CD with driveid and then uses  Id to gather information about the CD tracks and construct an XML representation of the CD logical structure. One example of such an XML representation depicted as in is as follows 
+
+After all the location steps have been evaluated the following final set of selected nodes depicted in 62 is passed to the Content Processor 62 
+
+The Content Processor calls the operation 1 30 to play the required temporal fragment of track 1 of the CD. It should be noted that in the example the selected node set is depicted in in the form of XML elements for illustration purposes. In practice however the selected node set is typically implemented as software objects using programming languages such as Java and C . Once the selected node set is completely defined the Content Processor can invoke various basic operations such as play copy etc. that are supported by the object. The object referred to is the software object in terms of which as noted in regard to the term explicit fragment reference is defined these software objects being usable to explicitly direct processes and or devices to play or retrieve the desired AV fragment s addressed by the fragment identifier. For instance a class of objects AudioTrackFragment may be implemented to represent nodes selected from an AudioCD logical model and AudioTrackFragment has a play method which calls the system operation
+
+With this approach complex XPath syntax and semantics are handled by the underlying XPath evaluator . Extensions to the mp Audiovisual Addressing scheme only require incremental changes to the mp Fragment Evaluator by modifying the affected node test step and predicate function step or implementing new node test and predicate functions. While new logical models can be supported by adding code to construct the XML representation of the logical model in the step .
+
+The mp Fragment Evaluator provides a further advantage. The selected node set compiled by the evaluator can be output in XML form and examined. This enables the mp fragment identifier represented by the selected node set to be validated by checking that the intended fragments are to be selected from the resource without requiring the presence of the actual resource . For instance in the above example the following XML representation of the final set of selected nodes can be used to verify that the initial mp fragment identifier 54B actually does select the fragments that are intended to be retrieved 63 
+
+To illustrate how the approach of can deal with complex XPath syntax and semantics with ease. We apply the complex fragment of 54 to the resource urn aParticularAudioCD That is we will try to resolve the following URI reference 
+
+In the step the mp Fragment Evaluator opens the CD with driveId and then uses  Id to gather information about the CD tracks and construct an XML representation of the CD logical structure as follows 
+
+After all the location steps have been evaluated the following final set of selected nodes is passed to the Content Processor 
+
+It is apparent from the above that the arrangements described are applicable to the computer and data processing industries.
+
+The foregoing describes only some embodiments of the present invention and modifications and or changes can be made thereto without departing from the scope and spirit of the invention the embodiments being illustrative and not restrictive.
+
+Examples of pre defined logical models for CDAudio and DVD Video One 0 possible logical model for a CDAudio is as follows 
+
+In the case of an Audio CD six music samples from the left and the right channels are taken to form a frame. The frame is then encoded in the form of 8 bit words. The words are then scrambled and parities are added.
+
+Each frame contains a sync word sub code signal data bits parity bits and merge bits. The 8 bit sub code contains a P and a Q bit. 98 consecutive frames are collected together to from a sub coding channel. There is a P channel of 98 bits and a Q channels of 98 bits.
+
+The P channel indicates the starting and stopping of tracks. Music data is denoted by all zeros the start flag precedes the musical selection by 2 3 seconds of 1 s. The lead out at the end of the disk is a 2 Hz alternating 1 and 0.
+
+The Q channel contains the program and timing information. The first two bits are synchronization bits. Bit indicates the number of channels bit is the copy protect and bit is the pre emphasis bit. The next four bits control the mode. There are three defined modes Mode 1 Mode 2 and Mode 3. The next 72 bits are data and the last 16 are a cyclic redundancy check on the channel data. Mode 1 data contains the timing information. In the lead in area this information consists of the number of tracks and the absolute starting time of each track. This information is continually repeated in the lead in area and allows the CD player to build the table of contents. In the program and lead out areas the Mode 1 data contains the track number index numbers within a track time within a track and absolute time.
+
+Mode 3 data contains codes for identifying each track for copyright logging plus the absolute time count.
+
+For instance the following stored metadata about an Audio CD may be retrieved from the Q channel of the Audio CD 
+

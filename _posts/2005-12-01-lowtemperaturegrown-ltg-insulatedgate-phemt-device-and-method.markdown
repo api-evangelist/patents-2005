@@ -1,0 +1,107 @@
+---
+
+title: Low-temperature-grown (LTG) insulated-gate PHEMT device and method
+abstract: A pseudomorphic-high-electron-mobility-transistor (PHEMT) includes a substrate, a low-temperature-grown (LTG) GaAs gate-insulator layer disposed on the substrate, and a gate electrode disposed on the gate-insulator layer.
+url: http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&f=G&l=50&d=PALL&S1=07842972&OS=07842972&RS=07842972
+owner: Retro Reflective Optics, LLC
+number: 07842972
+owner_city: Portsmouth
+owner_country: US
+publication_date: 20051201
+---
+This application claims priority benefits under 35 USC 119 e to Provisional Patent Application No. 60 632 710 filed 1 Dec. 2004 which application is incorporated herein by reference.
+
+The invention was made with United States Government support under Contract Grant No. DAAD19 01 2 0008 awarded by the Army. The United States Government has certain rights in this invention.
+
+ Insulated gate PHEMT Switching Devices Fabricated with a Low Temperature Grown LTG GaAs Gate Insulator R. Actis K. Nichols D. Xu X. Yang M. Pizzella W. Kong GOMACTech 05 pp. 403 406 April 2005 which is incorporated herein by reference.
+
+Several types of field effect transistors FETs are available for use at microwave millimeter wave frequencies. These high frequency FETs include metal semiconductor field effect transistors MESFETs and high electron mobility transistors HEMTs . A HEMT is distinguished from a MESFET in that in a HEMT charge is transferred from a charge donor layer to an undoped channel layer.
+
+There are generally two types of HEMTs. One type is referred to simply as a HEMT whereas the other type is referred to as a pseudomorphic HEMT or PHEMT. The difference between a HEMT and a PHEMT is that in the PHEMT one or more layers of the PHEMT have a lattice constant that differs significantly from the lattice constant of other materials that compose the device. As a result of this lattice mismatch the crystal structure of the material forming the PHEMT channel layer is strained. Although this lattice mismatch and the corresponding strain makes growth of PHEMTs more difficult than the growth of HEMTs several performance advantages are obtained. For example the charge density transferred into the PHEMT channel layer is increased often resulting in high electron mobility and high electron saturated velocity. As a result a PHEMT can develop higher power levels and can operate at higher frequencies with improved noise properties as compared to a HEMT.
+
+In particular the gallium arsenide GaAs PHEMT has played a major role in microwave millimeter wave amplification and control applications. However to enable still more capable systems there continues to be significant efforts aimed at improving the breakdown voltage and the power handling performance of a GaAs PHEMT. An improvement to the PHEMT structure can be achieved for power and switch devices by emulating the metal oxide semiconductor MOS device structures commonly found in Silicon based FET technology. The primary limitation why such a similar device has not found its way into GaAs technology is the notable absence of a viable gate insulator material.
+
+Previous attempts for such a gate insulator layer include the use of oxides sapphire materials and aluminum oxides. However these attempts have typically been unsuccessful because once a GaAs wafer is removed from a processing chamber typically a molecular beam epitaxy chamber the surface of the wafer often forms holes i.e. pins such that it is difficult to impossible to form an oxide or other type of insulator on the wafer surface in a chemical vapor deposition CVD chamber.
+
+An embodiment of a pseudomorphic high electron mobility transistor PHEMT includes a substrate a low temperature grown LTG GaAs gate insulator layer disposed on the substrate and a gate electrode disposed on the gate insulator layer.
+
+The following discussion of an embodiment of the invention illustrates the use of a highly insulating crystalline material known as low temperature grown LTG GaAs as a PHEMT gate insulator. LTG GaAs is lattice matched to the underlying GaAs and exhibits properties that make it suited for use as a gate insulator in a GaAs PHEMT device. As a material LTG GaAs is deposited or grown by molecular beam epitaxy MBE at a relatively low substrate temperature 200 C. as compared with the deposition temperature of conventional conducting GaAs 600 C. . The low growth temperature results in a material exhibiting a combination of high breakdown field high resistivity and short photoexcited carrier lifetime. Table I is a comparison of features of LTG GaAs with features of conventional GaAs grown by MBE.
+
+LTG GaAs is often suited for microwave applications because of its outstanding insulating properties and its natural lattice match to conventional conducting GaAs. An example PHEMT device utilizing a LTG GaAs gate insulator layer and a LTG GaAs buffer layer is shown in . In this example LTG GaAs is used both as the buffer layer and as the gate insulator layer to provide improved channel current confinement in the device.
+
+The buffer layer and the first spacer layer are disposed on the substrate to prevent carriers from leaking into the substrate.
+
+The LTG GaAs buffer layer is disposed on the substrate and allows the PHEMT to have a good drain source current pinch off. The LTG GaAs buffer layer is grown at approximately 200 C. within a tolerance of approximately 10 C. This causes the carriers within the buffer layer to have a low mobility and thus causes the buffer layer to have a high resistance. The buffer layer is also undoped and has a thickness in the range of approximately 0.5 microns m to approximately 1.0 m.
+
+The first spacer layer is disposed on the LTG GaAs buffer layer and improves the mobility of charge within the first undoped AlGaAs layer .
+
+In one embodiment the first spacer layer is a combination of multiple layers as discussed below in conjunction with .
+
+Referring to the first spacer layer includes a first doped layer a super lattice layer and a second doped layer .
+
+The first doped layer is disposed on the LTG GaAs buffer layer and has a thickness of approximately 100 . In one embodiment the first doped layer is an AlAs layer doped with silicon. But the layer may also be an AlGaAs layer having approximately 50 or more aluminum.
+
+The super lattice layer is disposed on the first doped layer is a super lattice GaAs AlGaAs layer and has a thickness in the range of approximately 200 to approximately 800 .
+
+The second doped layer acts as a carrier barrier layer is disposed on the super lattice layer is a doped AlGaAs layer and has a thickness of approximately 50 .
+
+Referring again to the first undoped AlGaAs layer is disposed on the first spacer layer and has a thickness of approximately 50 .
+
+The InGaAs channel layer is disposed on the first undoped AlGaAs layer is where the channel between the drain and source electrodes and is formed and has a thickness in the range of approximately 90 to approximately 120 . The channel layer may be doped so as to be conducting P or N type material.
+
+The second undoped AlGaAs layer is disposed on the InGaAs channel layer and has a thickness of approximately 45 .
+
+The doped AlGaAs layer is disposed on the second undoped AlGaAs layer and has a thickness of approximately 200 . During the formation of the doped AlGaAs layer a silicon doping spike is formed as indicated by the dashed line where the concentration of the doping spike is approximately 4 10atoms cm. For example the deposition of AlGaAs layer is temporarily halted and a layer of Si having a concentration of approximately 4 10Si atoms is formed. Then the remaining portion of the AlGaAs layer is formed over the Si layer. Furthermore it is contemplated that Si atoms from the spike layer may diffuse into the upper and lower portions of the AlGaAs layer or into other layers. The doping spike effectively separates the positive dopant charges from the negative dopant charges in the InGaAs channel layer to reduce or eliminate charge scattering.
+
+The doped GaAs layer is disposed on the doped AlGaAs layer and has a thickness in the range of approximately 100 to approximately 500 such as a thickness of approximately 300 in one embodiment. The GaAs layer is doped with Si and in one embodiment has a Si doping concentration of approximately 2 10atoms cm.
+
+The second spacer layer is disposed on the doped GaAs layer and has a thickness in the range of approximately 25 to approximately 100 . In one embodiment the second spacer layer is an AlAs layer. But the layer may also be an AlGaAs layer having approximately 50 or more aluminum.
+
+The LTG GaAs gate insulator layer is disposed on the second spacer layer and has a thickness in the range of approximately 200 to approximately 1000 such as a thickness of approximately 500 . The LTG GaAs gate insulator layer is grown at approximately 200 C. within a tolerance of approximately 3 C. Where the insulator layer is thinner than the LTG GaAs buffer layer the tolerance of the growing temperature for the insulator layer may be less than the tolerance for the buffer layer . A relatively tight tolerance of the layer growth temperature of about 200 C. causes the insulator layer to have a relatively low carrier lifetime and thus a relatively high resistivity. The insulator layer is undoped but doping this and any of the other undoped layers is contemplated.
+
+The source electrode and the drain electrode each pass through the LTG GaAs insulator layer and contact the second spacer layer . Although not shown in the source and the drain are alloyed down through the layers and until they contact or effectively merge into the channel layer in which is formed a channel between the source and the drain .
+
+For switching applications the LTG GaAs insulated gate PHEMT may offer several advantages over a conventional PHEMT. First the LTG GaAs insulator layer may significantly increase the isolation between the gate and the conducting channel. This increased isolation may result in a nearly two fold increase of the gate drain breakdown voltage of the PHEMT and may improve the power handling capability of the device. Second insofar as conventional PHEMTs are typically limited to a forward gate bias gate to source voltage below 0.6V the insulated gate PHEMT may be capable of sustaining a forward gate bias of several volts. This relatively large forward bias acts to reduce the channel resistance and associated on state drain to source resistance of the PHEMT where the PHEMT behaves like an N type MOS transistor. Third the capacitance associated with the LTG GaAs insulator layer may enable the PHEMT to exhibit an overall lower and more constant gate capacitance with a forward bias. These and other characteristics of the LTG GaAs insulated gate PHEMT are compared with a conventional PHEMT in Table II.
+
+Another benefit of using the LTG GaAs insulator layer is that it often can be more easily grown on the lower GaAs layers of the PHEMT . Because there is a lattice match between the layer and the layer and other underlying layers the GaAs insulator layer may be grown as a single crystal as opposed to being deposited.
+
+Using LTG GaAs for the gate insulator layer often makes the PHEMT more suitable than conventional PHEMTs for use as a power and switching device for high speed digital applications. In one embodiment the PHEMT emulates the metal oxide semiconductor MOS device structure commonly used in silicon technology. As a result the LTG GaAs insulated gate PHEMT provides an improved switching device structure for use at microwave millimeter wave frequencies while often maintaining compatibility with existing GaAs MMIC fabrication lines.
+
+When first and second control signals on the control nodes and respectively have logic 1 and logic 0 levels the switch is in the first throw state in which the node is electrically coupled to the node via a low resistance path and the node is electrically isolated from the nodes and . More specifically in response to a logic 1 level e.g. 1.5 V 5 V on the node the PHEMT is on and thus provides a low resistance path between the nodes and . Conversely in response to a logic 0 level e.g. 0 V on the node the PHEMT is off and thus electrically isolates the node from the nodes and . Furthermore in response to the logic 1 level on the node the PHEMT is on and thus provides a low resistance path between the nodes and . This low resistance path pulls the node to Vref and thus prevents the node from floating electrically. Conversely in response to the logic 0 level on the node the PHEMT is off and thus electrically isolates the node from the node .
+
+Conversely when the first and second control signals on the control nodes and respectively have logic 0 and logic 1 levels the switch is in the second throw state in which the node is electrically coupled to the node via a low resistance path and the node is electrically isolated from the nodes and . More specifically in response to a logic 1 level on the node the PHEMT is on and thus provides a low resistance path between the nodes and . Conversely in response to a logic 0 level on the node the PHEMT is off and thus electrically isolates the node from the nodes and . Furthermore in response to the logic 1 level on the node the PHEMT is on and thus provides a low resistance path between the nodes and . This low resistance path pulls the node to Vref and thus prevents the node from floating electrically. Conversely in response to the logic 0 level on the node the PHEMT is off and thus electrically isolates the node from the node .
+
+Still referring to alternate embodiments of the switch are contemplated. For example the PHEMTs may each operate similarly to a p channel MOS transistor and the voltage levels of the control signals and Vref changed as appropriate.
+
+While the transmit receive module receives a signal from the antenna element via the driver and the phase shifter the switch is in the first throw state such that the switch couples the phase shifter to the receive channel via the nodes and . A low noise amplifier amplifies the received signal and a mixer which receives a local oscillator LO signal demodulates the received signal. A band pass filter filters the demodulated signal and an analog to digital converter ADC generates the digital received data which may be further processed by circuitry that is not shown in .
+
+And while the transmit receive module sends a signal to the antenna element via the driver and the phase shifter the switch is in the second throw state such that the switch couples the transmit channel to the phase shifter via the nodes and . A digital to analog converter receives the digital transmit signal from circuitry not shown in and converts the digital transmit data into an analog transmit signal. A mixer which receives the LO signal modulates the transmit signal and a band pass filter filters the modulated transmit signal. An amplifier amplifies the filtered transmit signal and the switch couples the amplified transmit signal to the phase shifter which may impart a phase shift to the amplified transmit signal. The driver amplifies the phase shifted transmit signal and provides this signal to the antenna element which radiates the amplified transmit signal.
+
+Still referring to alternate embodiments of the phased array antenna system are contemplated. For example one or more of the phase shifters may include at least one PHEMT of or at least one switch of . Furthermore each of the modules may include additional circuitry or may omit some of the circuitry that is shown.
+
+Referring to one way to further reduce the on state resistance of the PHEMT of is to reduce the contact resistance of the device. The on state resistance of the PHEMT includes a contact resistance Rc between the source electrode and the channel layer a channel resistance Rch through the channel layer and a contact resistance Rc between the channel layer and drain electrode . Therefore one may reduce the overall on state resistance of the PHEMT by reducing the contact resistances Rc respectively associated with the source and the drain electrodes.
+
+According to an embodiment of the invention one may reduce the contact resistance Rc and thus may reduce the overall PHEMT on state resistance by growing N GaAs contacts under the source and drain electrodes and but not under the gate electrode. These contacts contain extra carriers and function as carrier reservoirs with the channel layer between the contacts. The process of forming these N GaAs contacts is referred to as a re growth process because after the layers of the PHEMT up to and including the N GaAs layer are grown the PHEMT structure is removed from the growth chamber for etching. After etching the N GaAs layer to form the N GaAs contacts the PHEMT structure is placed back into the growth chamber where the gate insulating layers are re grown over the existing PHEMT structure.
+
+Referring to a PHEMT structure is formed in an MBE chamber not shown . The PHEMT structure includes a buffer layer an undoped AlGaAs layer an InGaAs channel layer a doped AlGaAs layer a doped GaAs layer a first etch stop and an N GaAs layer . The first etch stop may be either AlAs or AlGaAs and is grown at a conventional growth temperature of approximately 500 C. to 600 C.
+
+Referring to the PHEMT structure is removed from the MBE chamber and portions of the N GaAs layer and the first etch stop where the gate insulating layers will later be formed are etched away. The remaining portions of the N GaAs layer and the first etch stop form the N GaAs source and drain contacts and resulting in a PHEMT structure .
+
+Referring to the PHEMT structure is placed back into the MBE chamber not shown for re growth of the gate insulating layer. Specifically a second etch stop and a LTG GaAs gate insulator layer are re grown over the structure to form a PHEMT structure . The second etch stop may be either AlAs or AlGaAs and is grown at a conventional growth temperature of approximately 500 C. to 600 C. The LTG GaAs gate insulator layer may be similar to the layer described above in conjunction with and the manner in which the layer is formed may be similar to the manner in which the layer is formed as described above in conjunction with .
+
+Referring to the PHEMT structure is removed from the MBE chamber not shown for the etching away of the portions of the LTG GaAs gate insulator layer and the second etch stop above the N GaAs contacts and . The source and drain terminals are then formed on the N GaAs contacts and respectively and the gate terminal is formed on the LTG GaAs gate insulator layer to form a PHEMT device which typically has a reduced on state resistance as compared to conventional PHEMTs and the PHEMT of . The source drain and gate terminals and may be similar to the source drain and gate terminals of and may be formed in a manner similar to the manner in which the source drain and gate terminals of are formed.
+
+Still referring to the PHEMT may be used in place of the PHEMT of in the switch of and in the antennae system of . Example characteristics of the PHEMT are shown in Table III.
+
+Furthermore conventional PHEMTs and LTG GaAs re growth insulated gate PHEMTs may be grown on the same wafer according to an embodiment of the invention. This is possible because the LTG GaAs gate insulator layer may be re grown on all of the PHEMT structures on the wafer and then selectively removed from the structures that are desired to be conventional PHEMTs.
+
+Specifically show another region of the same wafer of at the same respective times during the PHEMT formation process. That is and respectively show first and second regions of the wafer at a first point in the process and respectively show the first and second regions of the wafer at a second point in the process and so on. The first region shown in is the region of the wafer where the insulated gate PHEMT is formed and the second region shown in is the region of the wafer where the conventional PHEMT is formed.
+
+In contrast differs from and thus indicates that all portions of the LTG GaAs gate insulator layer and the second etch stop have been etched away from the second region of the wafer before forming the source the drain and the gate terminals to complete the conventional PHEMT which does not include a LTG GaAs gate insulator layer.
+
+Referring to and because conventional PHEMTs and LTG GaAs re growth insulated gate PHEMTs may be grown on the same wafer it is possible for systems such as the phased array antenna system or portions thereof to be formed on one monolithic integrated circuit. For example the phase shifters and the transmitter receivers may all be disposed on a single monolithic integrated circuit.
+
+Furthermore although the LTG GaAs insulated gate PHEMTs of of have been described for use in switching applications these PHEMTs may also be used in logic type applications e.g. to compose a logic gate such as a NAND or NOR gate or in any other application where a low on resistance is desired.
+
+From the foregoing it will be appreciated that although specific embodiments of the invention have been described herein for purposes of illustration various modifications may be made without deviating from the spirit and scope of the invention.
+
