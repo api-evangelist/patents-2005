@@ -1,9 +1,9 @@
 swagger: "2.0"
 info:
-  title: API Evangelist Patents (2005)
+  title: API Evangelist Patents (2011)
   description: These are the patents for this year, filtered by area.
   version: 1.0.0
-host: patents.2005.apievangelist.com
+host: patents.2011.apievangelist.com
 basePath: /apis
 schemes:
   - http
